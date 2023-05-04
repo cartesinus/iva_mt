@@ -1,0 +1,354 @@
+{
+    "show": [
+        "pokaż",
+        "wświetl"
+    ],
+    "give": [
+        "podaj",
+        "daj",
+        "dawaj"
+    ],
+    "add": [
+        "dodaj",
+        "dopisz"
+    ],
+    "find": [
+        "znajdź",
+        "poszukaj",
+        "odnajdź"
+    ],
+    "send": [
+        "wyślij",
+        "nadaj",
+        "poślij",
+        "prześlij"
+    ],
+    "play": [
+        "puść",
+        "zagraj",
+        "odtwarzaj",
+        "odtwórz",
+        "graj",
+        "odegraj"
+    ],
+    "tell": [
+        "powiedz",
+        "mów",
+        "opowiedz"
+    ],
+    "make": [
+        "zrób",
+        "wytwórz",
+        "utwórz"
+    ],
+    "set": [
+        "nastaw",
+        "ustaw",
+        "ustal",
+        "przestaw"
+    ],
+    "check": [
+        "sprawdź"
+    ],
+    "create": [
+        "stwórz",
+        "utwórz",
+        "zrób"
+    ],
+    "open": [
+        "otwórz"
+    ],
+    "search": [
+        "szukaj",
+        "przeszukaj",
+        "wyszukaj"
+    ],
+    "change": [
+        "zmień",
+        "zamień"
+    ],
+    "turn": [
+        "włącz",
+        "wyłącz",
+        "skręć"
+    ],
+    "get": [
+        "weź",
+        "wyciągnij"
+    ],
+    "save": [
+        "zapisz",
+        "zachowaj"
+    ],
+    "display": [
+        "wyświetl",
+        "wypisz",
+        "pokaż"
+    ],
+    "remind": [
+        "przypomnij"
+    ],
+    "go": [
+        "idź",
+        "skocz",
+        "przejdź"
+    ],
+    "remember": [
+        "zapamiętaj",
+        "pamiętaj",
+        "zanotuj"
+    ],
+    "put": [
+        "wprowadź",
+        "wstaw"
+    ],
+    "email": [
+        "emailuj"
+    ],
+    "post": [
+        "prześlij"
+    ],
+    "start": [
+        "rozpocznij",
+        "zacznij"
+    ],
+    "read": [
+        "odczytaj",
+        "czytaj",
+        "przeczytaj"
+    ],
+    "write": [
+        "napisz",
+        "pisz"
+    ],
+    "keep": [
+        "zachowaj"
+    ],
+    "remove": [
+        "opóźnij",
+        "pozbądź"
+    ],
+    "switch": [
+        "przełącz",
+        "przestaw"
+    ],
+    "notify": [
+        "poinformuj",
+        "zawiadom"
+    ],
+    "compose": [
+        "stwórz",
+        "skomponuj"
+    ],
+    "look": [
+        "zobacz"
+    ],
+    "update": [
+        "zaktualizuj",
+        "aktualizuj",
+        "uaktualnij",
+        "zupdateuj"
+    ],
+    "schedule": [
+        "zaplanuj"
+    ],
+    "take": [
+        "weź"
+    ],
+    "call": [
+        "zadzwoń",
+        "dzwoń",
+        "wezwij",
+        "telefonuj",
+        "zatelefonuj",
+        "wezwij"
+    ],
+    "delete": [
+        "usuń",
+        "skasuj"
+    ],
+    "bring": [
+        "podaj",
+        "daj"
+    ],
+    "alert": [
+        "powiadom"
+    ],
+    "move": [
+        "przenieś",
+        "przesuń"
+    ],
+    "shut": [
+        "zakończ"
+    ],
+    "increase": [
+        "zwiększ",
+        "podkręć"
+    ],
+    "listen": [
+        "posłuchaj"
+    ],
+    "inform": [
+        "poinformuj",
+        "informuj",
+        "powiadom",
+        "zawiadom"
+    ],
+    "edit": [
+        "edytuj"
+    ],
+    "raise": [
+        "podnieś",
+        "obudź"
+    ],
+    "provide": [
+        "podaj",
+        "daj"
+    ],
+    "modify": [
+        "zamień",
+        "modyfikuj",
+        "przerób"
+    ],
+    "prepare": [
+        "przygotuj",
+        "przygotujesz"
+    ],
+    "adjust": [
+        "dostosuj"
+    ],
+    "stop": [
+        "przestań",
+        "zatrzymaj",
+        "powstrzymaj",
+        "przerwij"
+    ],
+    "skip": [
+        "przeskocz",
+        "pomiń"
+    ],
+    "decrease": [
+        "zmniejsz"
+    ],
+    "define": [
+        "definicja",
+        "ustal"
+    ],
+    "cut": [
+        "odetnij"
+    ],
+    "launch": [
+        "uruchom",
+        "odpal"
+    ],
+    "answer": [
+        "odpowiedź"
+    ],
+    "repeat": [
+        "powtórz"
+    ],
+    "publish": [
+        "opublikuj"
+    ],
+    "pull": [
+        "pobierz",
+        "pociągnij"
+    ],
+    "convert": [
+        "przelicz"
+    ],
+    "respond": [
+        "odpisz"
+    ],
+    "mark": [
+        "zaznacz",
+        "oznacz"
+    ],
+    "activate": [
+        "aktywuj"
+    ],
+    "help": [
+        "pomóż"
+    ],
+    "refresh": [
+        "odśwież"
+    ],
+    "connect": [
+        "połącz",
+        "podłącz"
+    ],
+    "pause": [
+        "pauza",
+        "zapauzuj",
+        "wstrzymaj"
+    ],
+    "dial": [
+        "przedzwoń"
+    ],
+    "use": [
+        "użyj"
+    ],
+    "continue": [
+        "dalej",
+        "kontynuuj"
+    ],
+    "say": [
+        "powiedz"
+    ],
+    "dictate": [
+        "podyktuj",
+        "dyktuj"
+    ],
+    "rewind": [
+        "przewiń"
+    ],
+    "click": [
+        "naciśnij",
+        "kliknij"
+    ],
+    "calculate": [
+        "oblicz"
+    ],
+    "press": [
+        "naciśnij"
+    ],
+    "compare": [
+        "porównaj"
+    ],
+    "present": [
+        "pokaż",
+        "przedstaw"
+    ],
+    "disable": [
+        "wyłącz"
+    ],
+    "follow": [
+        "obserwuj",
+        "szpieguj",
+        "śledź"
+    ],
+    "count": [
+        "policz",
+        "oblicz"
+    ],
+    "deactivate": [
+        "dezaktywuj"
+    ],
+    "submit": [
+        "nadaj"
+    ],
+    "enable": [
+        "włącz"
+    ],
+    "scan": [
+        "przeszukaj",
+        "poszukaj"
+    ],
+    "bing": [
+        "bing",
+        "wyszukaj"
+    ],
+    "record": [
+        "nagraj"
+    ]
+}

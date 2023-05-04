@@ -1,0 +1,404 @@
+{
+    "set": [
+        "placera",
+        "plantera"
+    ],
+    "show": [
+        "bevisa",
+        "vitsorda"
+    ],
+    "play": [
+        "spela",
+        "uppträda",
+        "agera"
+    ],
+    "give": [
+        "skänka",
+        "räcka",
+        "mata"
+    ],
+    "tell": [
+        "säga",
+        "berätta",
+        "tala om"
+    ],
+    "find": [
+        "upptäcka",
+        "hitta",
+        "finna"
+    ],
+    "make": [
+        "tillverka",
+        "anrätta"
+    ],
+    "send": [
+        "posta",
+        "skicka",
+        "sända"
+    ],
+    "get": [
+        "skaffa",
+        "få"
+    ],
+    "delete": [
+        "radera",
+        "stryka ut",
+        "ta bort"
+    ],
+    "display": [
+        "skylta",
+        "visa up",
+        "uppvisa",
+        "demonstrera"
+    ],
+    "start": [
+        "börja",
+        "bege_sig",
+        "starta"
+    ],
+    "create": [
+        "tillverka",
+        "skapa",
+        "kreera"
+    ],
+    "turn": [
+        "tända",
+        "sätta",
+        "svänga",
+        "stänga"
+    ],
+    "search": [
+        "söka",
+        "leta"
+    ],
+    "call": [
+        "ringa",
+        "telefonera"
+    ],
+    "change": [
+        "byta",
+        "förändra",
+        "ändra"
+    ],
+    "put": [
+        "placera",
+        "sätta",
+        "lägga"
+    ],
+    "let": [
+        "tillåta",
+        "låta"
+    ],
+    "go": [
+        "gå",
+        "leda"
+    ],
+    "write": [
+        "skriva",
+        "författa"
+    ],
+    "pause": [
+        "pausa",
+        "uppehålla"
+    ],
+    "post": [
+        "posta"
+    ],
+    "remember": [
+        "minnas",
+        "spara",
+        "rädda",
+        "behålla"
+    ],
+    "record": [
+        "spela_in"
+    ],
+    "compose": [
+        "komponera",
+        "skriva",
+        "författa",
+        "ordna",
+        "samla"
+    ],
+    "book": [
+        "boka"
+    ],
+    "pay": [
+        "betala"
+    ],
+    "switch": [
+        "byta"
+    ],
+    "look": [
+        "leta"
+    ],
+    "ask": [
+        "fråga"
+    ],
+    "clear": [
+        "rensa_ut",
+        "frikänna",
+        "rentvå"
+    ],
+    "reply": [
+        "svara",
+        "genmäla",
+        "besvara"
+    ],
+    "move": [
+        "gå",
+        "förflytta",
+        "röra_sig"
+    ],
+    "buy": [
+        "köpa"
+    ],
+    "bring": [
+        "ta_med",
+        "medföra"
+    ],
+    "pull": [
+        "attrahera"
+    ],
+    "alarm": [
+        "gastkrama"
+    ],
+    "help": [
+        "bistå"
+    ],
+    "shut": [
+        "stänga"
+    ],
+    "listen": [
+        "lyssna"
+    ],
+    "purchase": [
+        "köpa"
+    ],
+    "adjust": [
+        "anpassa"
+    ],
+    "track": [
+        "jaga"
+    ],
+    "respond": [
+        "svara"
+    ],
+    "describe": [
+        "beskriva"
+    ],
+    "answer": [
+        "svara"
+    ],
+    "provide": [
+        "förse"
+    ],
+    "connect": [
+        "förbinda"
+    ],
+    "shuffle": [
+        "blanda"
+    ],
+    "copy": [
+        "kopiera"
+    ],
+    "explain": [
+        "förklara"
+    ],
+    "publish": [
+        "publicera",
+        "skriva"
+    ],
+    "raise": [
+        "lyfta"
+    ],
+    "quit": [
+        "sluta"
+    ],
+    "run": [
+        "fungera"
+    ],
+    "recommend": [
+        "rekommendera"
+    ],
+    "try": [
+        "försöka"
+    ],
+    "reduce": [
+        "minska"
+    ],
+    "print": [
+        "trycka"
+    ],
+    "say": [
+        "säga",
+        "förege"
+    ],
+    "name": [
+        "kalla",
+        "utse"
+    ],
+    "grab": [
+        "fatta"
+    ],
+    "present": [
+        "ställa_ut"
+    ],
+    "include": [
+        "inkludera"
+    ],
+    "select": [
+        "välja"
+    ],
+    "reserve": [
+        "boka"
+    ],
+    "exit": [
+        "ge_sig_av"
+    ],
+    "enter": [
+        "inträda"
+    ],
+    "ignore": [
+        "ignorera"
+    ],
+    "dictate": [
+        "diktera"
+    ],
+    "finish": [
+        "fullborda"
+    ],
+    "pick": [
+        "plocka"
+    ],
+    "drop": [
+        "tappa"
+    ],
+    "sort": [
+        "skolka"
+    ],
+    "transfer": [
+        "överföra"
+    ],
+    "wait": [
+        "vänta"
+    ],
+    "leave": [
+        "ge_sig_av"
+    ],
+    "close": [
+        "avsluta"
+    ],
+    "push": [
+        "knuffa"
+    ],
+    "click": [
+        "knäcka",
+        "knäppa"
+    ],
+    "press": [
+        "trycka"
+    ],
+    "generate": [
+        "ge"
+    ],
+    "compare": [
+        "jämföra"
+    ],
+    "dismiss": [
+        "avskeda"
+    ],
+    "arrange": [
+        "ordna"
+    ],
+    "replace": [
+        "ersätta"
+    ],
+    "load": [
+        "lasta"
+    ],
+    "delay": [
+        "fördröja"
+    ],
+    "submit": [
+        "överlämna"
+    ],
+    "follow": [
+        "följa"
+    ],
+    "suggest": [
+        "föreslå"
+    ],
+    "link": [
+        "förbinda"
+    ],
+    "acquire": [
+        "skaffa"
+    ],
+    "mail": [
+        "posta"
+    ],
+    "complain": [
+        "klaga"
+    ],
+    "solve": [
+        "lösa"
+    ],
+    "discover": [
+        "upptäcka"
+    ],
+    "stream": [
+        "svärma"
+    ],
+    "scan": [
+        "skumma"
+    ],
+    "fill": [
+        "fylla"
+    ],
+    "accept": [
+        "acceptera"
+    ],
+    "borrow": [
+        "låna"
+    ],
+    "pass": [
+        "räcka"
+    ],
+    "learn": [
+        "memorera"
+    ],
+    "loop": [
+        "ringla"
+    ],
+    "choose": [
+        "välja"
+    ],
+    "obtain": [
+        "skaffa"
+    ],
+    "transform": [
+        "förvandla"
+    ],
+    "watch": [
+        "titta"
+    ],
+    "allow": [
+        "tillåta"
+    ],
+    "deliver": [
+        "leverera"
+    ],
+    "install": [
+        "installera"
+    ],
+    "form": [
+        "forma"
+    ],
+    "import": [
+        "importera"
+    ],
+    "recover": [
+        "hitta"
+    ]
+}

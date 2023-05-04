@@ -1,0 +1,414 @@
+{
+    "show": [
+        "pokaż",
+        "wświetl"
+    ],
+    "give": [
+        "podaj",
+        "daj",
+        "dawaj"
+    ],
+    "add": [
+        "dodaj",
+        "dopisz"
+    ],
+    "find": [
+        "znajdź",
+        "poszukaj",
+        "odnajdź"
+    ],
+    "send": [
+        "wyślij",
+        "nadaj",
+        "poślij",
+        "prześlij"
+    ],
+    "play": [
+        "puść",
+        "zagraj",
+        "odtwarzaj",
+        "odtwórz",
+        "graj",
+        "odegraj"
+    ],
+    "tell": [
+        "powiedz",
+        "mów",
+        "opowiedz"
+    ],
+    "make": [
+        "zrób",
+        "wytwórz",
+        "utwórz"
+    ],
+    "set": [
+        "nastaw",
+        "ustaw",
+        "ustal",
+        "przestaw"
+    ],
+    "check": [
+        "sprawdź",
+        "skontroluj"
+    ],
+    "create": [
+        "stwórz",
+        "utwórz",
+        "zrób"
+    ],
+    "open": [
+        "otwórz",
+        "odblokuj"
+    ],
+    "search": [
+        "szukaj",
+        "przeszukaj",
+        "wyszukaj"
+    ],
+    "change": [
+        "zmień",
+        "zamień"
+    ],
+    "turn": [
+        "włącz",
+        "wyłącz",
+        "skręć"
+    ],
+    "get": [
+        "weź",
+        "wyciągnij"
+    ],
+    "save": [
+        "zapisz",
+        "zachowaj"
+    ],
+    "display": [
+        "wyświetl",
+        "wypisz",
+        "pokaż"
+    ],
+    "remind": [
+        "przypomnij",
+        "przypominaj"
+    ],
+    "go": [
+        "idź",
+        "skocz",
+        "przejdź"
+    ],
+    "remember": [
+        "zapamiętaj",
+        "pamiętaj",
+        "zanotuj"
+    ],
+    "put": [
+        "wprowadź",
+        "wstaw"
+    ],
+    "email": [
+        "emailuj"
+    ],
+    "post": [
+        "prześlij",
+        "publikuj",
+        "wyślij"
+    ],
+    "start": [
+        "rozpocznij",
+        "zacznij"
+    ],
+    "read": [
+        "odczytaj",
+        "czytaj",
+        "przeczytaj"
+    ],
+    "write": [
+        "napisz",
+        "pisz"
+    ],
+    "keep": [
+        "zachowaj",
+        "utrzymuj",
+        "przechowaj"
+    ],
+    "remove": [
+        "opóźnij",
+        "pozbądź"
+    ],
+    "switch": [
+        "przełącz",
+        "przestaw"
+    ],
+    "notify": [
+        "poinformuj",
+        "zawiadom"
+    ],
+    "compose": [
+        "stwórz",
+        "skomponuj"
+    ],
+    "look": [
+        "zobacz",
+        "spójrz"
+    ],
+    "update": [
+        "zaktualizuj",
+        "aktualizuj",
+        "uaktualnij",
+        "zupdateuj"
+    ],
+    "schedule": [
+        "zaplanuj",
+        "umów"
+    ],
+    "take": [
+        "weź",
+        "podejmij",
+        "zabierz"
+    ],
+    "call": [
+        "zadzwoń",
+        "dzwoń",
+        "wezwij",
+        "telefonuj",
+        "zatelefonuj",
+        "wezwij"
+    ],
+    "delete": [
+        "usuń",
+        "skasuj"
+    ],
+    "bring": [
+        "podaj",
+        "daj"
+    ],
+    "alert": [
+        "powiadom",
+        "ostrzegaj",
+        "uprzedź"
+    ],
+    "move": [
+        "przenieś",
+        "przesuń"
+    ],
+    "shut": [
+        "zakończ",
+        "zamknij",
+        "wyłącz"
+    ],
+    "increase": [
+        "zwiększ",
+        "podkręć"
+    ],
+    "listen": [
+        "posłuchaj",
+        "słuchaj",
+        "nasłuchuj"
+    ],
+    "inform": [
+        "poinformuj",
+        "informuj",
+        "powiadom",
+        "zawiadom"
+    ],
+    "edit": [
+        "edytuj",
+        "zmień"
+    ],
+    "raise": [
+        "podnieś",
+        "obudź"
+    ],
+    "provide": [
+        "podaj",
+        "daj"
+    ],
+    "modify": [
+        "zamień",
+        "modyfikuj",
+        "przerób"
+    ],
+    "prepare": [
+        "przygotuj",
+        "przygotujesz"
+    ],
+    "adjust": [
+        "dostosuj",
+        "zmodyfikuj",
+        "reguluj"
+    ],
+    "stop": [
+        "przestań",
+        "zatrzymaj",
+        "powstrzymaj",
+        "przerwij"
+    ],
+    "skip": [
+        "przeskocz",
+        "pomiń"
+    ],
+    "decrease": [
+        "zmniejsz",
+        "redukuj",
+        "obniż"
+    ],
+    "define": [
+        "definicja",
+        "ustal"
+    ],
+    "cut": [
+        "odetnij",
+        "wytnij",
+        "przytnij"
+    ],
+    "launch": [
+        "uruchom",
+        "odpal"
+    ],
+    "answer": [
+        "odpowiedź",
+        "odpowiedz",
+        "odpowiadaj",
+        "wyjaśnij"
+    ],
+    "repeat": [
+        "powtórz",
+        "ponów"
+    ],
+    "publish": [
+        "opublikuj",
+        "wydaj",
+        "umieść"
+    ],
+    "pull": [
+        "pobierz",
+        "pociągnij"
+    ],
+    "convert": [
+        "przelicz",
+        "konwertuj",
+        "zamień"
+    ],
+    "respond": [
+        "odpisz",
+        "reaguj",
+        "odpowiedz"
+    ],
+    "mark": [
+        "zaznacz",
+        "oznacz"
+    ],
+    "activate": [
+        "aktywuj",
+        "uruchom",
+        "włącz"
+    ],
+    "help": [
+        "pomóż",
+        "wspomagaj"
+    ],
+    "refresh": [
+        "odśwież",
+        "przeładuj",
+        "zaktualizuj"
+    ],
+    "connect": [
+        "połącz",
+        "podłącz"
+    ],
+    "pause": [
+        "pauza",
+        "zapauzuj",
+        "wstrzymaj"
+    ],
+    "dial": [
+        "przedzwoń",
+        "zadzwoń"
+    ],
+    "use": [
+        "użyj",
+        "korzystaj",
+        "wykorzystaj"
+    ],
+    "continue": [
+        "dalej",
+        "kontynuuj"
+    ],
+    "say": [
+        "powiedz",
+        "wyraź",
+        "wypowiedz"
+    ],
+    "dictate": [
+        "podyktuj",
+        "dyktuj"
+    ],
+    "rewind": [
+        "przewiń",
+        "cofnij"
+    ],
+    "click": [
+        "naciśnij",
+        "kliknij"
+    ],
+    "calculate": [
+        "oblicz",
+        "kalkuluj",
+        "wylicz"
+    ],
+    "press": [
+        "naciśnij",
+        "przyciśnij",
+        "wciskaj"
+    ],
+    "compare": [
+        "porównaj",
+        "zestaw",
+        "konfrontuj"
+    ],
+    "present": [
+        "pokaż",
+        "przedstaw"
+    ],
+    "disable": [
+        "wyłącz",
+        "zablokuj"
+    ],
+    "follow": [
+        "obserwuj",
+        "szpieguj",
+        "śledź"
+    ],
+    "count": [
+        "policz",
+        "oblicz"
+    ],
+    "deactivate": [
+        "dezaktywuj",
+        "wyłącz",
+        "deaktywuj"
+    ],
+    "submit": [
+        "nadaj",
+        "zgłoś",
+        "przesyłaj"
+    ],
+    "enable": [
+        "włącz",
+        "aktywuj",
+        "umożliw"
+    ],
+    "scan": [
+        "przeszukaj",
+        "poszukaj"
+    ],
+    "bing": [
+        "bing",
+        "wyszukaj"
+    ],
+    "record": [
+        "nagraj",
+        "rejestruj",
+        "zarejestrować"
+    ]
+}

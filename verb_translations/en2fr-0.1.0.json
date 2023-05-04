@@ -1,0 +1,1351 @@
+{
+    "set": [
+        "mettre",
+        "placer",
+        "poser",
+        "fixer",
+        "régler",
+        "fabrique",
+        "plante",
+        "usine",
+        "enfoncer"
+    ],
+    "show": [
+        "confirmer",
+        "démontrer",
+        "montrer",
+        "prouver",
+        "valider",
+        "établir",
+        "attester",
+        "témoigner",
+        "apparaître",
+        "produire"
+    ],
+    "play": [
+        "jouer",
+        "jeu",
+        "représenter",
+        "occuper",
+        "courir",
+        "agir",
+        "présenter",
+        "sembler"
+    ],
+    "give": [
+        "donner",
+        "offrir",
+        "passer",
+        "remettre",
+        "faire",
+        "transmettre",
+        "alimenter",
+        "nourrir"
+    ],
+    "tell": [
+        "affirmer",
+        "dire",
+        "déclarer",
+        "communiquer",
+        "conter",
+        "narrer",
+        "raconter",
+        "rapporter"
+    ],
+    "add": [
+        "ajouter"
+    ],
+    "find": [
+        "retrouver",
+        "trouver",
+        "analyser",
+        "apercevoir",
+        "constater",
+        "déceler",
+        "découvrir",
+        "dépouiller",
+        "détecter",
+        "déterminer",
+        "observer",
+        "remarquer",
+        "respecter"
+    ],
+    "make": [
+        "créer",
+        "effectuer",
+        "fabriquer",
+        "faire",
+        "fonder",
+        "obtenir",
+        "produire",
+        "aller",
+        "est-ce_que",
+        "constituer",
+        "contenir",
+        "forme",
+        "former",
+        "offrir",
+        "présenter",
+        "assembler",
+        "bâtir",
+        "construire",
+        "cuire",
+        "cuisiner",
+        "préparer"
+    ],
+    "send": [
+        "envoyer",
+        "transmettre",
+        "virer",
+        "courrier",
+        "poste",
+        "poster",
+        "expédier",
+        "transporter"
+    ],
+    "get": [
+        "acquérir",
+        "obtenir",
+        "aboutir",
+        "amener",
+        "apporter",
+        "avoir",
+        "devenir",
+        "recevoir",
+        "rendre",
+        "transporter",
+        "être"
+    ],
+    "delete": [
+        "effacer",
+        "supprimer"
+    ],
+    "display": [
+        "afficher",
+        "exposer",
+        "indiquer",
+        "montrer"
+    ],
+    "start": [
+        "commencer",
+        "débuter",
+        "partir",
+        "départ",
+        "démarrer",
+        "engager",
+        "ouvrir",
+        "recommencer"
+    ],
+    "create": [
+        "créer",
+        "faire",
+        "effectuer",
+        "fabriquer",
+        "fonder",
+        "obtenir",
+        "produire"
+    ],
+    "search": [
+        "chercher",
+        "rechercher",
+        "paraître",
+        "sembler",
+        "fouiller"
+    ],
+    "call": [
+        "appeler"
+    ],
+    "open": [
+        "fermer",
+        "ouvert",
+        "ouvrir"
+    ],
+    "check": [
+        "assurer",
+        "certifier",
+        "constater",
+        "contrôler",
+        "infirmer",
+        "voir",
+        "vérifier",
+        "regarder"
+    ],
+    "change": [
+        "changer",
+        "modifier",
+        "transformer",
+        "interrupteur",
+        "échanger",
+        "convertir"
+    ],
+    "remove": [
+        "enlever",
+        "retirer",
+        "retrancher",
+        "ôter",
+        "abolir",
+        "supprimer"
+    ],
+    "read": [
+        "lire"
+    ],
+    "take": [
+        "prendre"
+    ],
+    "put": [
+        "mettre",
+        "placer",
+        "poser"
+    ],
+    "let": [
+        "laisser",
+        "permettre",
+        "autoriser"
+    ],
+    "save": [
+        "assurer",
+        "compter",
+        "conserver",
+        "continuer",
+        "maintenir",
+        "rester",
+        "sauver",
+        "tenir"
+    ],
+    "go": [
+        "aller",
+        "circuler",
+        "déplacer",
+        "marcher",
+        "voyager",
+        "devenir",
+        "dire",
+        "disparaître",
+        "départir",
+        "faire",
+        "go",
+        "partir",
+        "passer"
+    ],
+    "stop": [
+        "achever",
+        "arrêter",
+        "finir",
+        "terminer"
+    ],
+    "use": [
+        "servir",
+        "utiliser"
+    ],
+    "write": [
+        "composer",
+        "rédiger",
+        "écrire"
+    ],
+    "order": [
+        "ordre"
+    ],
+    "pause": [
+        "faire",
+        "hésiter",
+        "pause",
+        "casser",
+        "trêve"
+    ],
+    "post": [
+        "courrier",
+        "poste",
+        "poster"
+    ],
+    "resume": [
+        "recommencer",
+        "redémarrer",
+        "renouer",
+        "reprendre"
+    ],
+    "remember": [
+        "penser",
+        "rappeler",
+        "remémorer",
+        "réfléchir",
+        "se_rappeler",
+        "se_souvenir"
+    ],
+    "keep": [
+        "conserver",
+        "continuer",
+        "rester",
+        "tenir",
+        "maintenir"
+    ],
+    "record": [
+        "constater",
+        "enregistrer"
+    ],
+    "compose": [
+        "adresser",
+        "composer",
+        "rédiger",
+        "écrire",
+        "écrire_à",
+        "compiler"
+    ],
+    "book": [
+        "livre",
+        "retenir",
+        "réserver",
+        "tenir"
+    ],
+    "e-mail": [
+        "courriel",
+        "courrier_électronique",
+        "mél"
+    ],
+    "pay": [
+        "acquitter",
+        "payer",
+        "verser"
+    ],
+    "switch": [
+        "changer",
+        "interrupteur",
+        "transformer",
+        "échanger",
+        "échangeur"
+    ],
+    "look": [
+        "regarder",
+        "chercher",
+        "paraître",
+        "rechercher",
+        "sembler"
+    ],
+    "ask": [
+        "demander",
+        "poser",
+        "prier"
+    ],
+    "clear": [
+        "ouvrir",
+        "accomplir",
+        "acquitter",
+        "exonérer"
+    ],
+    "reply": [
+        "confronter",
+        "réagir",
+        "répondre",
+        "réponse"
+    ],
+    "repeat": [
+        "redire",
+        "reformuler",
+        "réiterer",
+        "réitérer",
+        "répéter",
+        "faire",
+        "rappeler",
+        "respecter",
+        "écho"
+    ],
+    "move": [
+        "agir",
+        "faire",
+        "aller",
+        "circuler",
+        "déplacer",
+        "marcher",
+        "voyager",
+        "transférer"
+    ],
+    "buy": [
+        "acheter",
+        "acquérir"
+    ],
+    "bring": [
+        "amener",
+        "apporter",
+        "prendre",
+        "tenir",
+        "transporter",
+        "aboutir",
+        "avoir",
+        "devenir",
+        "obtenir",
+        "recevoir",
+        "rendre",
+        "être"
+    ],
+    "erase": [
+        "effacer",
+        "essuyer"
+    ],
+    "launch": [
+        "fonder",
+        "lancer",
+        "reconstituer",
+        "rétablir",
+        "établir"
+    ],
+    "pull": [
+        "allécher",
+        "attirer",
+        "tirer",
+        "retirer",
+        "sortir"
+    ],
+    "begin": [
+        "commencer",
+        "débuter",
+        "départ",
+        "partir"
+    ],
+    "alert": [
+        "alerter",
+        "avertir"
+    ],
+    "alarm": [
+        "choquer",
+        "heurter",
+        "horrifier",
+        "redouter",
+        "stupéfier"
+    ],
+    "continue": [
+        "continuer",
+        "arriver",
+        "de",
+        "diriger",
+        "entamer",
+        "maintenir",
+        "prendre",
+        "procéder",
+        "se_passer",
+        "poursuivre",
+        "durer",
+        "persister"
+    ],
+    "help": [
+        "aider",
+        "assister",
+        "secourir"
+    ],
+    "shut": [
+        "fermer"
+    ],
+    "jump": [
+        "sauter"
+    ],
+    "listen": [
+        "prêter",
+        "écouter",
+        "entendre"
+    ],
+    "skip": [
+        "houblon",
+        "sautiller"
+    ],
+    "define": [
+        "définir",
+        "délimiter",
+        "déterminer",
+        "fixer",
+        "préciser",
+        "spécifier"
+    ],
+    "initiate": [
+        "commencer",
+        "débuter",
+        "départ",
+        "engager",
+        "fonder",
+        "partir"
+    ],
+    "purchase": [
+        "acheter",
+        "acquérir"
+    ],
+    "adjust": [
+        "accommoder",
+        "adapter",
+        "ajuster",
+        "correspondre"
+    ],
+    "be": [
+        "être",
+        "constituer",
+        "représenter",
+        "suivre"
+    ],
+    "track": [
+        "pister",
+        "poursuivre"
+    ],
+    "respond": [
+        "réagir",
+        "répondre",
+        "confronter",
+        "réponse"
+    ],
+    "describe": [
+        "dessiner",
+        "décrire",
+        "présenter",
+        "apporter",
+        "compter",
+        "correspondre",
+        "rapporter",
+        "renseignement",
+        "représenter",
+        "étudier"
+    ],
+    "mark": [
+        "différencier",
+        "distinguer",
+        "démarquer",
+        "singulariser"
+    ],
+    "navigate": [
+        "naviguer",
+        "pilote"
+    ],
+    "answer": [
+        "confronter",
+        "réagir",
+        "répondre",
+        "réponse",
+        "considérer",
+        "résoudre"
+    ],
+    "provide": [
+        "fournir",
+        "pourvoir",
+        "donner",
+        "procurer"
+    ],
+    "see": [
+        "apprendre",
+        "comprendre",
+        "déceler",
+        "découvrir",
+        "voir"
+    ],
+    "connect": [
+        "attacher",
+        "lier",
+        "relier"
+    ],
+    "shuffle": [
+        "mélanger",
+        "retourner"
+    ],
+    "view": [
+        "considérer",
+        "estimer",
+        "juger",
+        "voir"
+    ],
+    "copy": [
+        "compiler",
+        "copier"
+    ],
+    "explain": [
+        "expliquer"
+    ],
+    "publish": [
+        "carrer",
+        "deviner",
+        "imaginer",
+        "imprimer",
+        "publier",
+        "rétorquer",
+        "éditer",
+        "écrire"
+    ],
+    "raise": [
+        "augmenter",
+        "lever",
+        "soulever",
+        "élever"
+    ],
+    "quit": [
+        "arrêter",
+        "cesser"
+    ],
+    "run": [
+        "fonctionner",
+        "marcher"
+    ],
+    "recommend": [
+        "agréer",
+        "approuver",
+        "recommander"
+    ],
+    "prepare": [
+        "fonder",
+        "organiser",
+        "préparer",
+        "reconstituer",
+        "rétablir",
+        "situer",
+        "établir"
+    ],
+    "try": [
+        "chercher",
+        "efforcer",
+        "essayer",
+        "tenter"
+    ],
+    "cut": [
+        "couper",
+        "trancher"
+    ],
+    "convert": [
+        "convertir"
+    ],
+    "dim": [
+        "foncer"
+    ],
+    "reduce": [
+        "diminuer",
+        "réduire"
+    ],
+    "brighten": [
+        "alléger"
+    ],
+    "measure": [
+        "mesurer",
+        "tailler"
+    ],
+    "print": [
+        "imprimer",
+        "deviner",
+        "imaginer",
+        "impressionner",
+        "rétorquer"
+    ],
+    "say": [
+        "affirmer",
+        "dire",
+        "déclarer",
+        "accuser",
+        "alléguer",
+        "enjoindre",
+        "ordre"
+    ],
+    "invite": [
+        "appeler",
+        "demander",
+        "exiger",
+        "inviter",
+        "passer"
+    ],
+    "speak": [
+        "exprimer",
+        "parler",
+        "discuter"
+    ],
+    "name": [
+        "appeler",
+        "dénommer",
+        "nommer",
+        "désigner",
+        "faire",
+        "mettre",
+        "nom",
+        "nominer",
+        "rendre",
+        "succéder",
+        "attacher",
+        "attribuer",
+        "charger",
+        "choisir",
+        "constituer",
+        "déléguer",
+        "fixer",
+        "préciser",
+        "présenter"
+    ],
+    "train": [
+        "dresser",
+        "former",
+        "préparer",
+        "train"
+    ],
+    "grab": [
+        "attraper",
+        "capturer",
+        "comprendre"
+    ],
+    "present": [
+        "exposer",
+        "montrer",
+        "présenter",
+        "représenter",
+        "affronter",
+        "cadeau",
+        "confronter",
+        "déposer",
+        "offrir",
+        "poser",
+        "soumettre",
+        "visage"
+    ],
+    "forward": [
+        "renvoyer"
+    ],
+    "attach": [
+        "attacher",
+        "lier",
+        "apposer",
+        "fixer",
+        "joindre"
+    ],
+    "clean": [
+        "nettoyer",
+        "propre",
+        "pur"
+    ],
+    "report": [
+        "apporter",
+        "compter",
+        "correspondre",
+        "décrire",
+        "rapporter",
+        "renseignement",
+        "représenter",
+        "étudier",
+        "signaler"
+    ],
+    "include": [
+        "accepter",
+        "accéder",
+        "admettre",
+        "comporter",
+        "comprendre",
+        "inclure",
+        "inscrire",
+        "permettre",
+        "recueillir",
+        "renfermer",
+        "reprendre"
+    ],
+    "select": [
+        "choisir",
+        "opter",
+        "prendre",
+        "sélectionner",
+        "élire"
+    ],
+    "reserve": [
+        "livre",
+        "retenir",
+        "réserver",
+        "tenir"
+    ],
+    "exit": [
+        "partir",
+        "quitter",
+        "sortir"
+    ],
+    "enter": [
+        "entrer",
+        "introduire",
+        "accéder"
+    ],
+    "hold": [
+        "disposer",
+        "détenir",
+        "retenir",
+        "tenir",
+        "assimiler",
+        "considérer",
+        "croire",
+        "estimer",
+        "juger",
+        "regarder",
+        "réputer",
+        "supposer",
+        "déclarer"
+    ],
+    "ignore": [
+        "bouder",
+        "méconnaître",
+        "négliger"
+    ],
+    "exchange": [
+        "changer",
+        "convertir",
+        "transformer",
+        "échanger",
+        "échange"
+    ],
+    "refresh": [
+        "rafraîchir"
+    ],
+    "dictate": [
+        "dicter"
+    ],
+    "finish": [
+        "achever",
+        "finir",
+        "terminer",
+        "conclure"
+    ],
+    "pick": [
+        "cueillir"
+    ],
+    "drop": [
+        "causer",
+        "provoquer",
+        "sembler",
+        "tomber",
+        "éviter"
+    ],
+    "sort": [
+        "classer",
+        "classifier",
+        "contenir",
+        "former",
+        "remporter",
+        "séparer",
+        "trier"
+    ],
+    "transfer": [
+        "transférer",
+        "passer",
+        "transmettre"
+    ],
+    "wait": [
+        "attendre"
+    ],
+    "leave": [
+        "partir",
+        "s'en_aller",
+        "quitter",
+        "sortir"
+    ],
+    "close": [
+        "fermer",
+        "aboutir",
+        "achever",
+        "clore",
+        "clôturer",
+        "conclure",
+        "finir",
+        "superviser",
+        "terminer"
+    ],
+    "push": [
+        "pousser"
+    ],
+    "click": [
+        "claquer",
+        "clic",
+        "cliquer"
+    ],
+    "press": [
+        "presser",
+        "appuyer",
+        "pousser",
+        "presse"
+    ],
+    "generate": [
+        "donner",
+        "engendrer",
+        "générer",
+        "offrir",
+        "présenter",
+        "rendre",
+        "retourner",
+        "revenir"
+    ],
+    "review": [
+        "critique"
+    ],
+    "compare": [
+        "comparer"
+    ],
+    "count": [
+        "compter",
+        "comte"
+    ],
+    "dismiss": [
+        "congédier",
+        "licencier",
+        "limoger",
+        "pouvoir",
+        "renvoyer",
+        "terminer",
+        "tirer"
+    ],
+    "rename": [
+        "renommer"
+    ],
+    "arrange": [
+        "disposer",
+        "organiser",
+        "ranger",
+        "arranger",
+        "coiffer",
+        "faire",
+        "fixer",
+        "mettre",
+        "régler"
+    ],
+    "talk": [
+        "discuter",
+        "exprimer",
+        "parler"
+    ],
+    "filter": [
+        "filtre",
+        "filtrer"
+    ],
+    "build": [
+        "assembler",
+        "bâtir",
+        "construire"
+    ],
+    "replace": [
+        "remplacer"
+    ],
+    "load": [
+        "charger"
+    ],
+    "extend": [
+        "offrir",
+        "proposer",
+        "présenter"
+    ],
+    "delay": [
+        "différer"
+    ],
+    "coin": [
+        "forger",
+        "monnaie",
+        "pièce_de_monnaie",
+        "frapper"
+    ],
+    "submit": [
+        "déposer",
+        "remettre",
+        "cadeau",
+        "offrir",
+        "présent",
+        "présenter",
+        "introduire",
+        "mettre",
+        "soumettre",
+        "soumettre_présenter",
+        "transmettre",
+        "rendre"
+    ],
+    "follow": [
+        "garder",
+        "guetter",
+        "observer",
+        "protéger",
+        "regarder",
+        "suivre",
+        "veiller",
+        "suffire",
+        "poursuivre"
+    ],
+    "suggest": [
+        "conseiller",
+        "proposer",
+        "suggérer",
+        "faire_allusion",
+        "inspirer",
+        "penser"
+    ],
+    "subtract": [
+        "déduire",
+        "retrancher",
+        "soustraire"
+    ],
+    "register": [
+        "indiquer"
+    ],
+    "block": [
+        "arrêter",
+        "barrer",
+        "bloquer",
+        "encombrer",
+        "entraver",
+        "obstruer"
+    ],
+    "link": [
+        "attacher",
+        "lier",
+        "relier",
+        "accoupler",
+        "connecter",
+        "joindre",
+        "participer",
+        "rallier",
+        "rassembler",
+        "rattacher",
+        "réunir",
+        "unifier",
+        "user",
+        "joug"
+    ],
+    "identify": [
+        "identifier",
+        "s'identifier_à"
+    ],
+    "acquire": [
+        "acquérir",
+        "obtenir"
+    ],
+    "plan": [
+        "chercher",
+        "envisager",
+        "planifier"
+    ],
+    "compute": [
+        "calculer",
+        "compter",
+        "computer"
+    ],
+    "mail": [
+        "courrier",
+        "poste",
+        "poster"
+    ],
+    "complain": [
+        "coup_de_pied",
+        "plaindre",
+        "plaine",
+        "porter_plainte",
+        "râler"
+    ],
+    "divide": [
+        "diviser",
+        "partager",
+        "répartir",
+        "séparer"
+    ],
+    "rate": [
+        "apprécier",
+        "estimer",
+        "valoriser",
+        "évaluer"
+    ],
+    "solve": [
+        "cerner",
+        "régler",
+        "résoudre",
+        "solutionner",
+        "remédier"
+    ],
+    "tag": [
+        "inscrire",
+        "marquer",
+        "étiqueter",
+        "étiquette"
+    ],
+    "discover": [
+        "découvrir",
+        "trouver",
+        "atteindre",
+        "frapper",
+        "sembler",
+        "tomber",
+        "constater",
+        "déceler"
+    ],
+    "stream": [
+        "affluer"
+    ],
+    "scan": [
+        "fouiller",
+        "râteau",
+        "râteau_de_jardinier"
+    ],
+    "suspend": [
+        "suspendre"
+    ],
+    "break": [
+        "casser"
+    ],
+    "join": [
+        "connecter",
+        "joindre",
+        "unir",
+        "rejoindre",
+        "relier",
+        "accoupler",
+        "participer",
+        "rallier",
+        "rassembler",
+        "rattacher",
+        "réunir",
+        "unifier",
+        "user"
+    ],
+    "determine": [
+        "déterminer",
+        "trouver",
+        "regarder",
+        "voir",
+        "vérifier"
+    ],
+    "detect": [
+        "analyser",
+        "apercevoir",
+        "constater",
+        "déceler",
+        "découvrir",
+        "dépouiller",
+        "détecter",
+        "déterminer",
+        "observer",
+        "remarquer",
+        "respecter",
+        "trouver"
+    ],
+    "fill": [
+        "remplir",
+        "occuper",
+        "combler"
+    ],
+    "accept": [
+        "accepter",
+        "admettre",
+        "recueillir",
+        "aronde",
+        "avaler",
+        "hirondelle"
+    ],
+    "disconnect": [
+        "débrancher"
+    ],
+    "borrow": [
+        "emprunter"
+    ],
+    "feel": [
+        "chercher",
+        "conclure",
+        "considérer",
+        "croire",
+        "deviner",
+        "dégager",
+        "estimer",
+        "imaginer",
+        "imprimer",
+        "juger",
+        "parvenir",
+        "penser",
+        "rechercher",
+        "rencontrer",
+        "ressentir",
+        "rétorquer",
+        "sembler",
+        "sentir",
+        "trouver",
+        "voir",
+        "éprouver",
+        "paraître"
+    ],
+    "pass": [
+        "donner",
+        "passer",
+        "remettre",
+        "communiquer",
+        "automne",
+        "incombent",
+        "revenir",
+        "tomber"
+    ],
+    "return": [
+        "redonner",
+        "rendre",
+        "restituer"
+    ],
+    "compile": [
+        "compiler",
+        "composer",
+        "écrire"
+    ],
+    "organize": [
+        "fonder",
+        "organiser",
+        "préparer",
+        "reconstituer",
+        "rétablir",
+        "situer",
+        "établir"
+    ],
+    "insert": [
+        "entrer",
+        "infixe",
+        "insérer",
+        "introduire",
+        "mettre",
+        "présenter"
+    ],
+    "learn": [
+        "acquérir",
+        "appartenir",
+        "apprendre",
+        "doter",
+        "découvrir",
+        "mourir",
+        "naître",
+        "obtenir",
+        "comprendre",
+        "déceler",
+        "voir",
+        "apprendre_par_cœur",
+        "mémoriser"
+    ],
+    "loop": [
+        "boucle"
+    ],
+    "choose": [
+        "choisir",
+        "opter",
+        "prendre",
+        "sélectionner",
+        "élire",
+        "décider",
+        "désigner",
+        "préférer"
+    ],
+    "probe": [
+        "auditionner",
+        "examiner"
+    ],
+    "apply": [
+        "servir",
+        "utiliser",
+        "appliquer",
+        "mettre"
+    ],
+    "label": [
+        "inscrire",
+        "marquer",
+        "étiqueter",
+        "étiquette"
+    ],
+    "obtain": [
+        "acquérir",
+        "avoir",
+        "avoir_succès",
+        "obtenir",
+        "procurer",
+        "réussir"
+    ],
+    "analyse": [
+        "analyser",
+        "examiner",
+        "étudier",
+        "disséquer",
+        "psychanalyser"
+    ],
+    "reopen": [
+        "rouvrir",
+        "réouvrir"
+    ],
+    "research": [
+        "recherche",
+        "rechercher",
+        "étudier",
+        "chercher",
+        "explorer"
+    ],
+    "transcribe": [
+        "transcrire",
+        "translittérer"
+    ],
+    "transform": [
+        "transformer",
+        "transmuter"
+    ],
+    "watch": [
+        "faire_attention",
+        "méfier",
+        "surveiller",
+        "observer",
+        "regarder",
+        "garder",
+        "guetter",
+        "protéger",
+        "suivre",
+        "veiller",
+        "voir"
+    ],
+    "allow": [
+        "autoriser",
+        "laisser",
+        "permettre"
+    ],
+    "summarize": [
+        "reprendre",
+        "résumer"
+    ],
+    "deliver": [
+        "livrer"
+    ],
+    "install": [
+        "installer",
+        "mettre"
+    ],
+    "chat": [
+        "babiller",
+        "bavarder",
+        "causer",
+        "papoter"
+    ],
+    "form": [
+        "façonner",
+        "former"
+    ],
+    "grant": [
+        "accorder",
+        "admettre",
+        "autoriser",
+        "donner",
+        "laisser",
+        "offrir",
+        "permettre",
+        "attribuer",
+        "octroyer",
+        "allouer",
+        "abandonner",
+        "abdiquer",
+        "croire",
+        "céder",
+        "fournir"
+    ],
+    "import": [
+        "importation",
+        "importer"
+    ],
+    "mount": [
+        "mettre"
+    ],
+    "receive": [
+        "avoir",
+        "recevoir"
+    ],
+    "recover": [
+        "rattraper",
+        "recouvrer",
+        "regagner",
+        "reprendre",
+        "restituer",
+        "récupérer",
+        "trouver"
+    ],
+    "rent": [
+        "louer",
+        "prendre",
+        "charte",
+        "embaucher",
+        "loyer"
+    ]
+}

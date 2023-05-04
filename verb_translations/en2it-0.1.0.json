@@ -1,0 +1,1097 @@
+{
+    "set": [
+        "appoggiare",
+        "mettere",
+        "porre",
+        "incassare",
+        "incastonare",
+        "montare",
+        "interrare",
+        "piantare"
+    ],
+    "show": [
+        "avere",
+        "dimostrare",
+        "mostrare",
+        "provare",
+        "attestare",
+        "comprovare",
+        "confermare",
+        "testimoniare"
+    ],
+    "play": [
+        "suonare",
+        "interpretare",
+        "rappresentare",
+        "recitare"
+    ],
+    "give": [
+        "attribuire",
+        "concedere",
+        "dare",
+        "fornire",
+        "recare",
+        "offrire",
+        "regalare",
+        "lasciare",
+        "affidare",
+        "allungare",
+        "passare",
+        "porgere",
+        "cibare",
+        "dare_da_mangiare_a",
+        "nutrire",
+        "sfamare"
+    ],
+    "tell": [
+        "affermare",
+        "dichiarare",
+        "dire",
+        "enunciare",
+        "enunziare",
+        "raccontare",
+        "riferire",
+        "contare",
+        "narrare",
+        "ricontare"
+    ],
+    "add": [
+        "aggiungere"
+    ],
+    "find": [
+        "rinvenire",
+        "ritrovare",
+        "trovare",
+        "PSEUDOGAP!",
+        "individuare",
+        "notare",
+        "osservare",
+        "riscontrare",
+        "scoprire",
+        "determinare",
+        "stabilire"
+    ],
+    "make": [
+        "fare",
+        "produrre",
+        "formare",
+        "congegnare",
+        "costruire",
+        "fabbricare",
+        "cucinare",
+        "cuocere",
+        "preparare"
+    ],
+    "send": [
+        "mandare",
+        "dirigere",
+        "inoltrare",
+        "inviare",
+        "spedire",
+        "indirizzare"
+    ],
+    "get": [
+        "acquisire",
+        "acquistare",
+        "avere",
+        "ottenere",
+        "prendere",
+        "ricevere",
+        "portare"
+    ],
+    "delete": [
+        "cancellare"
+    ],
+    "display": [
+        "andare",
+        "esibire",
+        "esporre",
+        "mostrare"
+    ],
+    "start": [
+        "attaccare",
+        "cominciare",
+        "iniziare",
+        "rompere_il_ghiaccio",
+        "dare_l'avvio_a",
+        "incominciare",
+        "avviarsi",
+        "partire",
+        "attivare",
+        "avviare"
+    ],
+    "create": [
+        "fare",
+        "produrre"
+    ],
+    "turn": [
+        "girare",
+        "girarsi",
+        "svoltare",
+        "virare",
+        "volgersi",
+        "voltare",
+        "voltarsi"
+    ],
+    "search": [
+        "cercare",
+        "frugare",
+        "perquisire"
+    ],
+    "call": [
+        "chiamare"
+    ],
+    "open": [
+        "accendere",
+        "aprire",
+        "cominciare",
+        "iniziare",
+        "intavolare"
+    ],
+    "check": [
+        "appurare",
+        "assodare",
+        "controllare",
+        "guardare",
+        "vedere",
+        "determinare",
+        "riguardare",
+        "verificare"
+    ],
+    "change": [
+        "cambiare",
+        "modificare",
+        "mutare"
+    ],
+    "remove": [
+        "eliminare",
+        "estirpare",
+        "levare",
+        "rimuovere",
+        "stirpare",
+        "togliere",
+        "deporre",
+        "destituire",
+        "sbalzare"
+    ],
+    "read": [
+        "leggere"
+    ],
+    "put": [
+        "appoggiare",
+        "mettere",
+        "porre"
+    ],
+    "let": [
+        "essere",
+        "fare",
+        "lasciare",
+        "permettere",
+        "volere"
+    ],
+    "go": [
+        "andare",
+        "muoversi",
+        "spostarsi",
+        "PSEUDOGAP!"
+    ],
+    "stop": [
+        "andare",
+        "concludere",
+        "concludersi",
+        "finire",
+        "sboccare",
+        "sbucare",
+        "smettere",
+        "terminare"
+    ],
+    "use": [
+        "adoperare",
+        "applicare",
+        "impiegare",
+        "usare",
+        "utilizzare",
+        "valersi"
+    ],
+    "write": [
+        "scrivere",
+        "PSEUDOGAP!"
+    ],
+    "order": [
+        "commissionare",
+        "ordinare"
+    ],
+    "pause": [
+        "fare_una_pausa",
+        "fermarsi_un_momento",
+        "sostare"
+    ],
+    "post": [
+        "indirizzare",
+        "inviare",
+        "spedire"
+    ],
+    "resume": [
+        "riprendere"
+    ],
+    "remember": [
+        "evocare",
+        "rammentare",
+        "ricordare",
+        "ricordarsi"
+    ],
+    "record": [
+        "incidere",
+        "registrare"
+    ],
+    "compose": [
+        "comporre",
+        "scrivere",
+        "redigere"
+    ],
+    "book": [
+        "fissare",
+        "prenotare",
+        "riserbare",
+        "riservare"
+    ],
+    "pay": [
+        "pagare"
+    ],
+    "switch": [
+        "cambiare",
+        "mutare"
+    ],
+    "look": [
+        "guardare",
+        "cercare"
+    ],
+    "ask": [
+        "chiedere",
+        "domandare",
+        "porre",
+        "informarsi"
+    ],
+    "clear": [
+        "disintasare",
+        "disotturare",
+        "liberare",
+        "sbarazzare",
+        "sgomberare",
+        "sgombrare",
+        "spurgare",
+        "rasserenarsi",
+        "rischiararsi",
+        "schiarirsi",
+        "pulire",
+        "discolpare",
+        "scagionare"
+    ],
+    "reply": [
+        "replicare",
+        "rispondere"
+    ],
+    "repeat": [
+        "reiterare",
+        "ridire",
+        "ripetere"
+    ],
+    "move": [
+        "agire",
+        "fare",
+        "muoversi",
+        "andare",
+        "spostarsi",
+        "muovere",
+        "spostare",
+        "articolare"
+    ],
+    "buy": [
+        "acquistare",
+        "comperare",
+        "comprare"
+    ],
+    "bring": [
+        "avere",
+        "portare",
+        "trasportare",
+        "prendere"
+    ],
+    "erase": [
+        "cancellare"
+    ],
+    "launch": [
+        "costituire",
+        "creare",
+        "edificare",
+        "erigere",
+        "fondare",
+        "impostare",
+        "istituire",
+        "stabilire"
+    ],
+    "pull": [
+        "accentrare",
+        "allettare",
+        "attirare",
+        "attrarre",
+        "calamitare",
+        "polarizzare",
+        "richiamare",
+        "sedurre",
+        "tirare",
+        "estrarre",
+        "sfoderare",
+        "trarre"
+    ],
+    "begin": [
+        "aprire",
+        "attaccare",
+        "cominciare",
+        "incominciare",
+        "iniziare"
+    ],
+    "alert": [
+        "allarmare",
+        "allertare",
+        "sgomentare",
+        "turbare"
+    ],
+    "alarm": [
+        "inorridire",
+        "sgomentare",
+        "spaventare",
+        "terrorizzare"
+    ],
+    "continue": [
+        "continuare",
+        "proseguire",
+        "seguitare",
+        "andare_avanti",
+        "procedere",
+        "seguire",
+        "protrarsi"
+    ],
+    "help": [
+        "aiutare",
+        "assistere",
+        "soccorrere",
+        "sovvenire",
+        "sussidiare"
+    ],
+    "shut": [
+        "chiudere",
+        "serrare",
+        "chiudersi"
+    ],
+    "jump": [
+        "aumentare_di_colpo",
+        "fare_un_salto",
+        "rincarare"
+    ],
+    "listen": [
+        "ascoltare"
+    ],
+    "skip": [
+        "saltare",
+        "saltarellare",
+        "saltellare",
+        "salterellare",
+        "salticchiare"
+    ],
+    "define": [
+        "definire",
+        "specificare"
+    ],
+    "initiate": [
+        "iniziare"
+    ],
+    "purchase": [
+        "acquistare",
+        "comperare",
+        "comprare"
+    ],
+    "adjust": [
+        "adattare"
+    ],
+    "be": [
+        "avere",
+        "costituire",
+        "essere",
+        "rimanere",
+        "risultare",
+        "riuscire",
+        "stare",
+        "trovarsi",
+        "fare",
+        "rappresentare"
+    ],
+    "track": [
+        "inseguire",
+        "rincorrere",
+        "seguire_le_orme_di",
+        "seguire_le_tracce_di"
+    ],
+    "respond": [
+        "reagire",
+        "rispondere",
+        "replicare"
+    ],
+    "describe": [
+        "descrivere",
+        "esporre",
+        "tracciare",
+        "disegnare",
+        "riferire",
+        "riportare"
+    ],
+    "mark": [
+        "contraddistinguere",
+        "differenziare",
+        "distinguere"
+    ],
+    "answer": [
+        "replicare",
+        "rispondere"
+    ],
+    "provide": [
+        "erogare",
+        "fornire",
+        "provvedere"
+    ],
+    "see": [
+        "apprendere",
+        "imparare",
+        "sapere",
+        "sentire"
+    ],
+    "connect": [
+        "abboccare",
+        "collegare",
+        "congiungere"
+    ],
+    "shuffle": [
+        "mescolare",
+        "mischiare",
+        "rimescolare"
+    ],
+    "view": [
+        "considerare",
+        "reputare",
+        "ritenere",
+        "vedere",
+        "volere"
+    ],
+    "copy": [
+        "ricopiare"
+    ],
+    "explain": [
+        "esporre",
+        "spiegare"
+    ],
+    "publish": [
+        "stampare",
+        "tirare",
+        "pubblicare",
+        "rilasciare",
+        "scrivere"
+    ],
+    "raise": [
+        "alzare",
+        "elevare",
+        "esporre",
+        "innalzare",
+        "sollevare"
+    ],
+    "quit": [
+        "cessare",
+        "fermarsi",
+        "finire",
+        "interrompere",
+        "smettere"
+    ],
+    "run": [
+        "andare",
+        "funzionare"
+    ],
+    "recommend": [
+        "appoggiare"
+    ],
+    "prepare": [
+        "organizzare",
+        "programmare"
+    ],
+    "try": [
+        "cercare",
+        "esperimentare",
+        "provare",
+        "sperimentare",
+        "tentare"
+    ],
+    "cut": [
+        "tagliare"
+    ],
+    "convert": [
+        "convertire"
+    ],
+    "dim": [
+        "abbassare",
+        "incupire",
+        "incupirsi",
+        "scurire",
+        "scurirsi"
+    ],
+    "reduce": [
+        "abbassare",
+        "amputare",
+        "assottigliare",
+        "diminuire",
+        "ridurre",
+        "tagliare"
+    ],
+    "brighten": [
+        "schiarire",
+        "rasserenarsi",
+        "rischiararsi",
+        "schiarirsi"
+    ],
+    "measure": [
+        "misurare"
+    ],
+    "print": [
+        "scrivere_a_stampatello",
+        "scrivere_in_stampatello"
+    ],
+    "say": [
+        "affermare",
+        "dichiarare",
+        "dire",
+        "enunciare",
+        "enunziare",
+        "raccontare",
+        "comandare",
+        "ordinare"
+    ],
+    "speak": [
+        "parlare",
+        "pronunciare"
+    ],
+    "name": [
+        "battezzare",
+        "chiamare",
+        "denominare",
+        "creare",
+        "costituire",
+        "nominare"
+    ],
+    "train": [
+        "addestrare"
+    ],
+    "grab": [
+        "acchiappare",
+        "afferrare",
+        "prendere"
+    ],
+    "present": [
+        "dimostrare",
+        "esibire",
+        "fare_una_dimostrazione_di",
+        "mostrare",
+        "presentare",
+        "mettere_a_confronto"
+    ],
+    "forward": [
+        "inoltrare"
+    ],
+    "attach": [
+        "attaccare"
+    ],
+    "clean": [
+        "pulire"
+    ],
+    "report": [
+        "descrivere",
+        "disegnare",
+        "riferire",
+        "riportare"
+    ],
+    "include": [
+        "ammettere",
+        "includere",
+        "introdurre",
+        "comprendere"
+    ],
+    "select": [
+        "cernere",
+        "scegliere",
+        "scernere",
+        "selezionare",
+        "trascegliere"
+    ],
+    "reserve": [
+        "prenotare",
+        "riserbare",
+        "riservare",
+        "fissare"
+    ],
+    "exit": [
+        "levarsi",
+        "uscire"
+    ],
+    "enter": [
+        "entrare"
+    ],
+    "hold": [
+        "reggere",
+        "tenere",
+        "ritenere"
+    ],
+    "refresh": [
+        "rinfrescare"
+    ],
+    "dictate": [
+        "dettare"
+    ],
+    "finish": [
+        "concludere",
+        "finire",
+        "terminare",
+        "spolverare"
+    ],
+    "pick": [
+        "cogliere",
+        "raccogliere"
+    ],
+    "drop": [
+        "cadere",
+        "lasciare",
+        "mollare",
+        "sganciare",
+        "precipitare"
+    ],
+    "sort": [
+        "classificare",
+        "smistare"
+    ],
+    "transfer": [
+        "trasmettere"
+    ],
+    "wait": [
+        "aspettare",
+        "attendere"
+    ],
+    "leave": [
+        "abbandonare",
+        "andare",
+        "andarsene",
+        "lasciare",
+        "partire",
+        "uscire",
+        "levarsi"
+    ],
+    "push": [
+        "premere",
+        "spingere"
+    ],
+    "press": [
+        "premere"
+    ],
+    "generate": [
+        "dare",
+        "fruttare",
+        "produrre",
+        "rendere",
+        "generare"
+    ],
+    "review": [
+        "fare_la_recensione_di",
+        "recensire"
+    ],
+    "compare": [
+        "comparare",
+        "confrontare",
+        "paragonare",
+        "raffrontare",
+        "ragguagliare",
+        "riscontrare"
+    ],
+    "dismiss": [
+        "allontanare",
+        "congedare",
+        "dimettere",
+        "dimissionare",
+        "licenziare"
+    ],
+    "rename": [
+        "ribattezzare"
+    ],
+    "arrange": [
+        "accomodare",
+        "disporre",
+        "distribuire",
+        "ordinare",
+        "sistemare",
+        "comporre",
+        "adattare",
+        "arrangiare"
+    ],
+    "talk": [
+        "parlare",
+        "pronunciare"
+    ],
+    "filter": [
+        "colare",
+        "filtrare"
+    ],
+    "build": [
+        "congegnare",
+        "costruire",
+        "fabbricare",
+        "fare"
+    ],
+    "replace": [
+        "rimpiazzare",
+        "sostituire"
+    ],
+    "load": [
+        "caricare",
+        "imbarcare"
+    ],
+    "delay": [
+        "differire",
+        "ritardare",
+        "tardare"
+    ],
+    "coin": [
+        "coniare",
+        "stampare"
+    ],
+    "follow": [
+        "badare",
+        "controllare",
+        "guardare",
+        "osservare",
+        "sorvegliare",
+        "tener_d'occhio",
+        "vigilare",
+        "seguire"
+    ],
+    "suggest": [
+        "consigliare",
+        "proporre",
+        "prospettare",
+        "suggerire"
+    ],
+    "subtract": [
+        "abbonare",
+        "dedurre",
+        "detrarre",
+        "levare",
+        "scalare",
+        "sottrarre",
+        "togliere"
+    ],
+    "register": [
+        "registrare",
+        "segnare"
+    ],
+    "block": [
+        "asserragliare",
+        "bloccare",
+        "ingorgare",
+        "intasare",
+        "ostruire",
+        "sbarrare"
+    ],
+    "link": [
+        "abboccare",
+        "collegare",
+        "congiungere",
+        "collegarsi",
+        "congiungersi",
+        "unire"
+    ],
+    "identify": [
+        "identificare",
+        "individuare",
+        "riconoscere"
+    ],
+    "acquire": [
+        "acquisire",
+        "acquistare",
+        "avere",
+        "ottenere",
+        "prendere",
+        "ricevere"
+    ],
+    "plan": [
+        "pianificare"
+    ],
+    "compute": [
+        "calcolare",
+        "computare",
+        "conteggiare"
+    ],
+    "mail": [
+        "imbucare",
+        "spedire",
+        "indirizzare",
+        "inviare"
+    ],
+    "complain": [
+        "dolersi",
+        "lamentarsi"
+    ],
+    "divide": [
+        "distinguere",
+        "dividere",
+        "separare",
+        "squarciarsi",
+        "staccarsi",
+        "disgiungere",
+        "disunire"
+    ],
+    "rate": [
+        "quotare",
+        "stimare",
+        "valutare"
+    ],
+    "solve": [
+        "risolvere",
+        "sbrogliare"
+    ],
+    "tag": [
+        "contrassegnare",
+        "distinguere",
+        "etichettare"
+    ],
+    "discover": [
+        "scoprire",
+        "trovare",
+        "PSEUDOGAP!"
+    ],
+    "stream": [
+        "sciamare"
+    ],
+    "scan": [
+        "esaminare",
+        "scrutare"
+    ],
+    "suspend": [
+        "sospendere"
+    ],
+    "break": [
+        "staccare",
+        "stroncare",
+        "tagliare",
+        "troncare"
+    ],
+    "join": [
+        "accomunare",
+        "collegarsi",
+        "riunire",
+        "saldare",
+        "unire",
+        "collegare",
+        "congiungersi"
+    ],
+    "determine": [
+        "determinare",
+        "scoprire",
+        "stabilire",
+        "trovare"
+    ],
+    "detect": [
+        "individuare",
+        "notare",
+        "osservare",
+        "riscontrare",
+        "scoprire",
+        "trovare"
+    ],
+    "fill": [
+        "riempire",
+        "impiombare",
+        "riempirsi"
+    ],
+    "accept": [
+        "accettare",
+        "trangugiare"
+    ],
+    "disconnect": [
+        "disinserire"
+    ],
+    "borrow": [
+        "prendere"
+    ],
+    "feel": [
+        "credere",
+        "pensare",
+        "trovare"
+    ],
+    "pass": [
+        "affidare",
+        "allungare",
+        "dare",
+        "passare",
+        "porgere",
+        "comunicare",
+        "far_sapere",
+        "rendere_noto"
+    ],
+    "return": [
+        "rendere",
+        "respingere",
+        "rinviare"
+    ],
+    "compile": [
+        "comporre",
+        "redigere"
+    ],
+    "organize": [
+        "organizzare",
+        "programmare"
+    ],
+    "insert": [
+        "inserire",
+        "introdurre"
+    ],
+    "learn": [
+        "apprendere",
+        "imparare",
+        "sapere",
+        "sentire",
+        "memorizzare"
+    ],
+    "choose": [
+        "cernere",
+        "scegliere",
+        "scernere",
+        "selezionare",
+        "trascegliere",
+        "preferire"
+    ],
+    "probe": [
+        "investigare",
+        "sondare"
+    ],
+    "apply": [
+        "adoperare",
+        "applicare",
+        "impiegare",
+        "usare",
+        "utilizzare",
+        "valersi"
+    ],
+    "label": [
+        "contrassegnare",
+        "distinguere",
+        "etichettare"
+    ],
+    "obtain": [
+        "ottenere"
+    ],
+    "analyse": [
+        "analizzare",
+        "esaminare",
+        "studiare",
+        "risolvere",
+        "psicanalizzare"
+    ],
+    "reopen": [
+        "riaprire",
+        "riattivare"
+    ],
+    "research": [
+        "esplorare"
+    ],
+    "transcribe": [
+        "trascrivere",
+        "translitterare",
+        "traslitterare",
+        "ridurre"
+    ],
+    "transform": [
+        "trasformare",
+        "trasmutare"
+    ],
+    "watch": [
+        "controllare",
+        "guardare",
+        "osservare",
+        "badare",
+        "sorvegliare",
+        "tener_d'occhio",
+        "vigilare",
+        "vedere"
+    ],
+    "allow": [
+        "lasciare",
+        "permettere",
+        "volere"
+    ],
+    "summarize": [
+        "compendiare",
+        "epilogare",
+        "rassumere",
+        "recapitolare",
+        "riassumere",
+        "ricapitolare",
+        "riepilogare",
+        "sintetizzare"
+    ],
+    "deliver": [
+        "consegnare",
+        "distribuire",
+        "recapitare",
+        "ricapitare",
+        "rimettere"
+    ],
+    "install": [
+        "impiantare",
+        "installare",
+        "istallare",
+        "mettere"
+    ],
+    "chat": [
+        "chiacchierare",
+        "ciarlare"
+    ],
+    "form": [
+        "foggiare",
+        "formare",
+        "fucinare",
+        "modellare",
+        "plasmare",
+        "creare"
+    ],
+    "grant": [
+        "concedere",
+        "permettere",
+        "tollerare",
+        "conferire",
+        "dare"
+    ],
+    "import": [
+        "importare"
+    ],
+    "mount": [
+        "lanciare"
+    ],
+    "receive": [
+        "avere",
+        "incassare",
+        "introitare",
+        "percepire",
+        "ricevere",
+        "riscotere",
+        "riscuotere"
+    ],
+    "recover": [
+        "ricuperare"
+    ],
+    "rent": [
+        "affittare",
+        "noleggiare"
+    ]
+}
