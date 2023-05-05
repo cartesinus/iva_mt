@@ -1,0 +1,22 @@
+# .gitignore
+
+# Python unittest temporary files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.cache
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Other Python files and directories to ignore
+*.egg-info/
+dist/
+build/

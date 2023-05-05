@@ -9,6 +9,7 @@ with different verb alternatives and validating translations with proper tag han
 import json
 import re
 import string
+import os
 from os import listdir
 from os.path import isfile, join
 from transformers import M2M100ForConditionalGeneration, M2M100Tokenizer, PhrasalConstraint
@@ -27,19 +28,16 @@ def check_tags(src_utt, tgt_utt):
     bool: True if all tags in the source utterance are present and properly formatted in the target
     utterance, False otherwise.
     """
-    for tag_letter in list(string.ascii_lowercase):
-        tag = "<" + tag_letter + ">"
-        if tag in src_utt:
-            if not tag in tgt_utt:
-                return False
-            #check if both opening and closing tags are present
-            if len(re.findall(tag, tgt_utt)) != 2:
-                return False
+    tags = ["<" + tag_letter + ">" for tag_letter in string.ascii_lowercase]
+    tags_in_src = [tag for tag in tags if tag in src_utt]
 
-    return True
+    return all(
+        tag in tgt_utt and len(re.findall(tag, tgt_utt)) == 2
+        for tag in tags_in_src
+    )
 
 
-class iva_mt:
+class IVAMT:
     """
     Class for generating single and multiple translations of input text using the M2M100 model.
     Supports generating translations with different verb alternatives and validating translations
@@ -76,6 +74,7 @@ class iva_mt:
         input_ids = self.tokenizer(input_text, return_tensors="pt")
         lang_id = self.tokenizer.get_lang_id(self.lang)
         generated_tokens = self.model.generate(**input_ids, forced_bos_token_id=lang_id)
+
         return self.tokenizer.batch_decode(generated_tokens, skip_special_tokens=True)
 
     def simple_verb_sub(self, sentence_src, sentence_tgt):
@@ -90,21 +89,18 @@ class iva_mt:
         Returns:
         list: A list of alternative translations with verb substitutions.
         """
-        subs = []
-        src_verb = [w for w in sentence_src.split() if w in self.verb_ont]
-        tgt_verbs = []
+        src_verb = next((w for w in sentence_src.split() if w in self.verb_ont), None)
+
         if src_verb:
-            tgt_verbs = [w for w in sentence_tgt.split() if w in self.verb_ont[src_verb[0]]]
-
-        if tgt_verbs:
-            for verb in tgt_verbs:
-                for v in self.verb_ont[src_verb[0]]:
-                    if v != verb:
-                        variant = re.sub(verb, v, sentence_tgt)
-                        if variant not in subs:
-                            subs.append(variant)
-
-        return subs
+            tgt_verbs = [w for w in sentence_tgt.split() if w in self.verb_ont[src_verb]]
+            return list(set(
+                re.sub(verb, v, sentence_tgt)
+                for verb in tgt_verbs
+                for v in self.verb_ont[src_verb]
+                if v != verb
+            ))
+        else:
+            return []
 
     def generate_alternative_translations(self, input_text):
         """
@@ -154,11 +150,41 @@ class iva_mt:
         The file should have a name starting with 'en2' followed by the target language code.
         The loaded ontology will be stored in the 'verb_ont' attribute.
         """
-        ont_path = 'verb_translations/'
-        ont_files = [f for f in listdir(ont_path) if isfile(join(ont_path, f)) and f.startswith('en2' + self.lang) ]
-        with open(ont_path + ont_files[0], "r") as f:
+        ont_path = os.path.join(os.path.dirname(__file__),
+                                '../data/verb_translations/en2' + self.lang + '/')
+        ont_files = [f for f in os.listdir(ont_path)
+                     if os.path.isfile(os.path.join(ont_path, f)) and f.startswith('en2' + self.lang)]
+
+        # Sort the list of files in descending order, so the highest version number is the first element
+        ont_files.sort(reverse=True)
+
+        with open(os.path.join(ont_path, ont_files[0]), "r") as f:
             json_data = json.load(f)
+
         self.verb_ont = json_data
+
+    def get_verb_translation(self, lang, verb):
+        """
+        Retrieve the translation of a given verb in the specified target language.
+
+        Args:
+        lang (str): The target language code (e.g., 'pl', 'fr', 'es', etc.).
+        verb (str): The verb in the source language (English) for which to find translations.
+
+        Returns:
+        list: A list of verb translations in the target language if the verb is found in the verb ontology;
+              an empty list otherwise.
+
+        Note:
+        The method will load the verb ontology if it has not been loaded already.
+        """
+        if not self.verb_ont:
+            self.load_verb_ontology()
+
+        if verb in self.verb_ont:
+            return self.verb_ont[verb]
+        else:
+            return []
 
     def get_verb_alternatives(self, sentence):
         """
@@ -173,13 +199,17 @@ class iva_mt:
         list: A list of lists containing the forced word IDs for each verb alternative found in the
         verb ontology.
         """
-        constrains = []
-        verb = [w for w in sentence.split() if w in self.verb_ont]
-        for alternative in self.verb_ont[verb[0]]:
-            force_words_ids = self.tokenizer([alternative], add_special_tokens=False).input_ids
-            constrains.append(force_words_ids)
+        # Find the verb in the sentence that is present in the verb ontology
+        verb = next((w for w in sentence.split() if w in self.verb_ont), None)
 
-        return constrains
+        # If a verb is found, generate a list of forced word IDs for each alternative
+        if verb:
+            return [
+                self.tokenizer([alternative], add_special_tokens=False).input_ids
+                for alternative in self.verb_ont[verb]
+            ]
+        else:
+            return []
 
     def generate_unconstrained_translations(self, input_text, num_variants=5):
         """

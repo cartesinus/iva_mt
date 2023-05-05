@@ -4,9 +4,9 @@ Generating diverse verb variants with VerbNet and Conditional Beam Search for en
 
 Usage:
 ```python
-import iva_mt
+from iva_mt.iva_mt import IVAMT
 
-iva_mt = iva_mt("pl")
-iva_mt.translate("set the temperature on <a>my<a> thermostat")
-iva_mt.generate_alternative_translations("set the temperature on <a>my<a> thermostat")
+translator = IVAMT("pl")
+translator.translate("set the temperature on <a>my<a> thermostat")
+translator.generate_alternative_translations("set the temperature on <a>my<a> thermostat")
 ```
