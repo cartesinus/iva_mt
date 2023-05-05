@@ -137,9 +137,9 @@ class IVAMT:
                                                    no_repeat_ngram_size=2,
                                                    remove_invalid_values=True)
             variant = self.tokenizer.batch_decode(generated_tokens, skip_special_tokens=True)
-            if variant not in alternatives \
+            if variant[0] not in alternatives \
                and abs(len(input_text.split()) - len(variant[0].split())) <= 2 \
-               and check_tags(input_text, variant):
+               and check_tags(input_text, variant[0]):
                 alternatives.append(variant[0])
 
         return alternatives
