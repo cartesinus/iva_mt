@@ -68,15 +68,15 @@ class IVAMT:
 
     def translate(self, input_text):
         """
-        Generate a single translation for a given input text.
+        Generate a single translation for a given input text. Input text can be string or list of strings.
 
         Args:
-        input_text (str): Source text to translate.
+        input_text (str or list(str)): Source text/s to translate.
 
         Returns:
-        list: A list containing a single translated string.
+        list: A list containing a single translated string for each element of input_text.
         """
-        input_ids = self.tokenizer(input_text, return_tensors="pt")
+        input_ids = self.tokenizer(input_text, padding=True, return_tensors="pt")
         input_ids.to(self.device)
         lang_id = self.tokenizer.get_lang_id(self.lang)
         generated_tokens = self.model.generate(**input_ids, forced_bos_token_id=lang_id)
