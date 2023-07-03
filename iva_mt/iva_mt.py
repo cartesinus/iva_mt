@@ -12,6 +12,8 @@ import string
 import os
 from os import listdir
 from os.path import isfile, join
+
+import torch
 from transformers import M2M100ForConditionalGeneration, M2M100Tokenizer, PhrasalConstraint
 
 
@@ -48,18 +50,21 @@ class IVAMT:
     iva_mt.translate("set the temperature on <a>my<a> thermostat")
     iva_mt.generate_alternative_translations("set the temperature on <a>my<a> thermostat")
     """
-    def __init__(self, lang):
+    def __init__(self, lang, device="cpu"):
         """
         Initialize the iva_mt class with the specified target language (lang).
 
         Args:
         lang (str): Target language code (e.g. "pl" for Polish).
+        cpu (str): Device used for inference, (e.g. "cuda:0", default: "cpu")
         """
-        model_name = "cartesinus/iva_mt_wslot-m2m100_418M-en-" + lang
+        model_name = f"cartesinus/iva_mt_wslot-m2m100_418M-en-{lang}"
+        self.device = torch.device(device)
         self.lang = lang
         self.verb_ont = []
         self.tokenizer = M2M100Tokenizer.from_pretrained(model_name, src_lang="en", tgt_lang=lang)
         self.model = M2M100ForConditionalGeneration.from_pretrained(model_name)
+        self.model.to(self.device)
 
     def translate(self, input_text):
         """
@@ -72,6 +77,7 @@ class IVAMT:
         list: A list containing a single translated string.
         """
         input_ids = self.tokenizer(input_text, return_tensors="pt")
+        input_ids.to(self.device)
         lang_id = self.tokenizer.get_lang_id(self.lang)
         generated_tokens = self.model.generate(**input_ids, forced_bos_token_id=lang_id)
 
@@ -128,6 +134,7 @@ class IVAMT:
         alternatives.extend(self.simple_verb_sub(input_text, single_trans[0]))
         for constraint in verb_alternatives:
             input_ids = self.tokenizer(input_text, return_tensors="pt")
+            input_ids.to(self.device)
             generated_tokens = self.model.generate(**input_ids,
                                                    forced_bos_token_id=lang_id,
                                                    #constraints=constraints,
