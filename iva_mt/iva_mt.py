@@ -10,8 +10,11 @@ import json
 import re
 import string
 import os
+from typing import List
 from os import listdir
 from os.path import isfile, join
+
+import torch
 from transformers import M2M100ForConditionalGeneration, M2M100Tokenizer, PhrasalConstraint
 
 
@@ -48,34 +51,54 @@ class IVAMT:
     iva_mt.translate("set the temperature on <a>my<a> thermostat")
     iva_mt.generate_alternative_translations("set the temperature on <a>my<a> thermostat")
     """
-    def __init__(self, lang):
+    def __init__(self, lang, device="cpu", batch_size=1):
         """
         Initialize the iva_mt class with the specified target language (lang).
 
         Args:
         lang (str): Target language code (e.g. "pl" for Polish).
+        cpu (str): Device used for inference, (e.g. "cuda:0", default: "cpu")
+        batch size (int): Batch size used for inference
         """
-        model_name = "cartesinus/iva_mt_wslot-m2m100_418M-en-" + lang
+        model_name = f"cartesinus/iva_mt_wslot-m2m100_418M-en-{lang}"
+        self.device = torch.device(device)
         self.lang = lang
         self.verb_ont = []
         self.tokenizer = M2M100Tokenizer.from_pretrained(model_name, src_lang="en", tgt_lang=lang)
         self.model = M2M100ForConditionalGeneration.from_pretrained(model_name)
+        self.model.to(self.device)
+        self.batch_size = batch_size
 
     def translate(self, input_text):
         """
-        Generate a single translation for a given input text.
+        Generate a single translation for a given input text. Input text can be string or list of strings.
 
         Args:
-        input_text (str): Source text to translate.
+        input_text (str or list(str)): Source text/s to translate.
 
         Returns:
-        list: A list containing a single translated string.
+        list: A list containing a single translated string for each element of input_text.
         """
-        input_ids = self.tokenizer(input_text, return_tensors="pt")
+        input_ids = self.tokenizer(input_text, padding=True, return_tensors="pt")
+        input_ids.to(self.device)
         lang_id = self.tokenizer.get_lang_id(self.lang)
         generated_tokens = self.model.generate(**input_ids, forced_bos_token_id=lang_id)
 
         return self.tokenizer.batch_decode(generated_tokens, skip_special_tokens=True)
+
+    def batch_translate(self, input_texts: List[str]):
+        """
+        Translate utterances in batch
+        Args:
+            input_texts: List of input strings
+
+        Returns:
+        list: A list containing a single translated string for each element of input_text.
+        """
+        output = []
+        for input_text in [input_texts[x:x + self.batch_size] for x in range(0, len(input_texts), self.batch_size)]:
+            output.extend(self.translate(input_text))
+        return output
 
     def simple_verb_sub(self, sentence_src, sentence_tgt):
         """
@@ -128,6 +151,7 @@ class IVAMT:
         alternatives.extend(self.simple_verb_sub(input_text, single_trans[0]))
         for constraint in verb_alternatives:
             input_ids = self.tokenizer(input_text, return_tensors="pt")
+            input_ids.to(self.device)
             generated_tokens = self.model.generate(**input_ids,
                                                    forced_bos_token_id=lang_id,
                                                    #constraints=constraints,
