@@ -12,7 +12,7 @@ translator.translate("set the temperature on <a>my<a> thermostat")
 #for multi-variant translation
 translator.generate_alternative_translations("set the temperature on <a>my<a> thermostat")
 ```
-Available languages (en2xx): **pl, es, de, fr, pt, sv, zh, ja, tr, hi**
+Available languages (en2xx): [pl](https://huggingface.co/cartesinus/iva_mt_wslot-m2m100_418M-en-pl), [es](https://huggingface.co/cartesinus/iva_mt_wslot-m2m100_418M-en-es), [de](https://huggingface.co/cartesinus/iva_mt_wslot-m2m100_418M-en-de), [fr](https://huggingface.co/cartesinus/iva_mt_wslot-m2m100_418M-en-fr), [pt](https://huggingface.co/cartesinus/iva_mt_wslot-m2m100_418M-en-pt), [sv](https://huggingface.co/cartesinus/iva_mt_wslot-m2m100_418M-en-sv), [zh](https://huggingface.co/cartesinus/iva_mt_wslot-m2m100_418M-en-zh), [ja](https://huggingface.co/cartesinus/iva_mt_wslot-m2m100_418M-en-ja), [tr](https://huggingface.co/cartesinus/iva_mt_wslot-m2m100_418M-en-tr), [hi](https://huggingface.co/cartesinus/iva_mt_wslot-m2m100_418M-en-hi)
 
 To use GPU and batching, provide information about device:
 ```python
