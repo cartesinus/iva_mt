@@ -19,3 +19,8 @@ To use GPU and batching, provide information about device:
 IVAMT("pl", device="cuda:0", batch_size=16)
 ```
 On V100 this allows to translate ~100 sentences/minute.
+
+To use baseline M2M100:
+```python
+IVAMT("pl", model_name="facebook/m2m100_418M")
+```

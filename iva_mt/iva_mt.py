@@ -51,21 +51,30 @@ class IVAMT:
     iva_mt.translate("set the temperature on <a>my<a> thermostat")
     iva_mt.generate_alternative_translations("set the temperature on <a>my<a> thermostat")
     """
-    def __init__(self, lang, device="cpu", batch_size=1):
+    def __init__(self, lang, device="cpu", batch_size=1, model_name="iva_mt"):
         """
         Initialize the iva_mt class with the specified target language (lang).
 
         Args:
         lang (str): Target language code (e.g. "pl" for Polish).
-        cpu (str): Device used for inference, (e.g. "cuda:0", default: "cpu")
+        device (str): Device used for inference, (e.g. "cuda:0", default: "cpu")
         batch size (int): Batch size used for inference
+        model_name (str): hf model name (e.g. "facebook/m2m100_418M") by default set to iva_mt
+            models
         """
-        model_name = f"cartesinus/iva_mt_wslot-m2m100_418M-en-{lang}"
-        self.device = torch.device(device)
+        if model_name == "iva_mt":
+            model_name = f"cartesinus/iva_mt_wslot-m2m100_418M-en-{lang}"
+
         self.lang = lang
         self.verb_ont = []
-        self.tokenizer = M2M100Tokenizer.from_pretrained(model_name, src_lang="en", tgt_lang=lang)
-        self.model = M2M100ForConditionalGeneration.from_pretrained(model_name)
+        self.device = torch.device(device)
+
+        try:
+            self.tokenizer = M2M100Tokenizer.from_pretrained(model_name, src_lang="en", tgt_lang=lang)
+            self.model = M2M100ForConditionalGeneration.from_pretrained(model_name)
+        except Exception as e:
+            raise RuntimeError(f"Failed to load model and tokenizer: {str(e)}")
+
         self.model.to(self.device)
         self.batch_size = batch_size
 
