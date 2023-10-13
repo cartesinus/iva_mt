@@ -70,6 +70,7 @@ Example Configuration:
     "model_name": "m2m100_418M",
     "dataset": "wmt16"
 }
+```
 
 ### Running on Google Colab
 
