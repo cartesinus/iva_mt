@@ -1,0 +1,10 @@
+{
+  "src_lang": "en",
+  "tgt_lang": "pl",
+  "learning_rate": 2e-5,
+  "weight_decay": 0.01,
+  "num_train_epochs": 10,
+  "model_name": "m2m100_418M",
+  "model_space": "facebook",
+  "dataset": "cartesinus/iva_mt_wslot"
+}
