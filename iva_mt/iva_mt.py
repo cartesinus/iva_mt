@@ -16,6 +16,7 @@ from os.path import isfile, join
 
 import torch
 from transformers import M2M100ForConditionalGeneration, M2M100Tokenizer, PhrasalConstraint
+from peft import PeftModel, PeftConfig
 
 
 def check_tags(src_utt, tgt_utt):
@@ -51,16 +52,32 @@ class IVAMT:
     iva_mt.translate("set the temperature on <a>my<a> thermostat")
     iva_mt.generate_alternative_translations("set the temperature on <a>my<a> thermostat")
     """
-    def __init__(self, lang, device="cpu", batch_size=1, model_name="iva_mt"):
+    def __init__(self, lang, device="cpu", batch_size=1, model_name="iva_mt", peft_model_id=None):
         """
-        Initialize the iva_mt class with the specified target language (lang).
+        Initialize the IVAMT class with the specified target language (lang), and optionally load a PEFT-trained model.
 
         Args:
         lang (str): Target language code (e.g. "pl" for Polish).
-        device (str): Device used for inference, (e.g. "cuda:0", default: "cpu")
-        batch size (int): Batch size used for inference
-        model_name (str): hf model name (e.g. "facebook/m2m100_418M") by default set to iva_mt
-            models
+        device (str, optional): Device used for inference, e.g., "cuda:0". Defaults to "cpu".
+        batch_size (int, optional): Batch size used for inference. Defaults to 1.
+        model_name (str, optional): HF model name (e.g., "facebook/m2m100_418M"). By default, set to custom models ("iva_mt").
+        peft_model_id (str, optional): Identifier of the PEFT-trained model on the Hugging Face Model Hub or the path
+                                        to a local directory containing the PEFT-trained model files. Defaults to None.
+                                        If provided, a PEFT-trained model is loaded for inference.
+
+        Raises:
+        RuntimeError: If model and tokenizer loading fails.
+
+        Attributes:
+        lang (str): Target language code.
+        device (torch.device): Device used for inference.
+        batch_size (int): Batch size used for inference.
+        tokenizer (transformers.M2M100Tokenizer): Tokenizer for the M2M100 model.
+        model (transformers.M2M100ForConditionalGeneration or PeftModel): M2M100 model for translation.
+                                                                          If peft_model_id is provided, a PEFT-trained model is used.
+
+        Example:
+        iva_mt = IVAMT("pl", device="cuda:0", peft_model_id="stevhliu/roberta-large-lora-token-classification")
         """
         if model_name == "iva_mt":
             model_name = f"cartesinus/iva_mt_wslot-m2m100_418M-en-{lang}"
@@ -70,8 +87,16 @@ class IVAMT:
         self.device = torch.device(device)
 
         try:
-            self.tokenizer = M2M100Tokenizer.from_pretrained(model_name, src_lang="en", tgt_lang=lang)
-            self.model = M2M100ForConditionalGeneration.from_pretrained(model_name)
+            if peft_model_id:
+                peft_config = PeftConfig.from_pretrained(peft_model_id)
+                self.inference_model = M2M100ForConditionalGeneration.from_pretrained(
+                    peft_config.base_model_name_or_path
+                )
+                self.tokenizer = M2M100Tokenizer.from_pretrained(peft_config.base_model_name_or_path, src_lang="en", tgt_lang=lang)
+                self.model = PeftModel.from_pretrained(self.inference_model, peft_model_id)
+            else:
+                self.tokenizer = M2M100Tokenizer.from_pretrained(model_name, src_lang="en", tgt_lang=lang)
+                self.model = M2M100ForConditionalGeneration.from_pretrained(model_name)
         except Exception as e:
             raise RuntimeError(f"Failed to load model and tokenizer: {str(e)}")
 
