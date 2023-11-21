@@ -1,0 +1,788 @@
+{
+    "set": [
+        "ayarlamak",
+        "belirlemek"
+    ],
+    "show": [
+        "göstermek",
+        "sergilemek"
+    ],
+    "remind": [
+        "hatırlatmak",
+        "uyarmak"
+    ],
+    "play": [
+        "oynatmak",
+        "çalmak"
+    ],
+    "give": [
+        "vermek",
+        "sunmak"
+    ],
+    "tell": [
+        "söylemek",
+        "bildirmek"
+    ],
+    "add": [
+        "eklemek",
+        "ilave etmek"
+    ],
+    "find": [
+        "bulmak",
+        "keşfetmek"
+    ],
+    "make": [
+        "yapmak",
+        "oluşturmak"
+    ],
+    "cancel": [
+        "iptal etmek",
+        "geri almak"
+    ],
+    "send": [
+        "göndermek",
+        "yollamak"
+    ],
+    "get": [
+        "almak",
+        "edinmek"
+    ],
+    "delete": [
+        "silmek",
+        "kaldırmak"
+    ],
+    "display": [
+        "göstermek",
+        "sergilemek"
+    ],
+    "start": [
+        "başlamak",
+        "açmak"
+    ],
+    "create": [
+        "oluşturmak",
+        "yaratmak"
+    ],
+    "turn": [
+        "çevirmek",
+        "döndürmek"
+    ],
+    "search": [
+        "aramak",
+        "araştırmak"
+    ],
+    "call": [
+        "aramak",
+        "çağırmak"
+    ],
+    "open": [
+        "açmak",
+        "başlatmak"
+    ],
+    "check": [
+        "kontrol etmek",
+        "denetlemek"
+    ],
+    "change": [
+        "değiştirmek",
+        "dönüştürmek"
+    ],
+    "remove": [
+        "çıkarmak",
+        "kaldırmak"
+    ],
+    "translate": [
+        "çevirmek",
+        "tercüme etmek"
+    ],
+    "read": [
+        "okumak",
+        "gözden geçirmek"
+    ],
+    "take": [
+        "almak",
+        "kapmak"
+    ],
+    "list": [
+        "listelemek",
+        "sıralamak"
+    ],
+    "put": [
+        "koymak",
+        "yerleştirmek"
+    ],
+    "let": [
+        "izin vermek",
+        "bırakmak"
+    ],
+    "save": [
+        "kaydetmek",
+        "korumak"
+    ],
+    "go": [
+        "gitmek",
+        "yola çıkmak"
+    ],
+    "stop": [
+        "durmak",
+        "durdurmak"
+    ],
+    "use": [
+        "kullanmak",
+        "işletmek"
+    ],
+    "update": [
+        "güncellemek",
+        "yenilemek"
+    ],
+    "write": [
+        "yazmak",
+        "tutmak"
+    ],
+    "order": [
+        "sipariş vermek",
+        "emretmek"
+    ],
+    "pause": [
+        "duraklatmak",
+        "ara vermek"
+    ],
+    "post": [
+        "göndermek",
+        "yayınlamak"
+    ],
+    "tweet": [
+        "tweet atmak"
+    ],
+    "log": [
+        "kaydetmek",
+        "günlüğe yazmak"
+    ],
+    "resume": [
+        "devam etmek",
+        "yeniden başlatmak"
+    ],
+    "remember": [
+        "hatırlamak",
+        "anımsamak"
+    ],
+    "keep": [
+        "tutmak",
+        "saklamak"
+    ],
+    "record": [
+        "kaydetmek",
+        "tutmak"
+    ],
+    "compose": [
+        "oluşturmak",
+        "düzenlemek"
+    ],
+    "book": [
+        "rezervasyon yapmak",
+        "kitaplamak"
+    ],
+    "message": [
+        "mesaj göndermek"
+    ],
+    "e-mail": [
+        "e-posta göndermek"
+    ],
+    "pay": [
+        "ödemek"
+    ],
+    "switch": [
+        "değiştirmek",
+        "anahtarlamak"
+    ],
+    "modify": [
+        "değiştirmek",
+        "modifiye etmek"
+    ],
+    "edit": [
+        "düzenlemek",
+        "değiştirmek",
+        "yeniden şekillendirmek"
+    ],
+    "look": [
+        "bakmak",
+        "göz atmak",
+        "incelemek"
+    ],
+    "ask": [
+        "sormak",
+        "talep etmek",
+        "istemek"
+    ],
+    "clear": [
+        "temizlemek",
+        "açıklığa kavuşturmak",
+        "ortadan kaldırmak"
+    ],
+    "reply": [
+        "yanıtlamak",
+        "cevap vermek",
+        "karşılık vermek"
+    ],
+    "repeat": [
+        "tekrarlamak",
+        "yinelemek",
+        "tekrar etmek"
+    ],
+    "schedule": [
+        "planlamak",
+        "zamanlamak",
+        "takvim belirlemek"
+    ],
+    "move": [
+        "hareket ettirmek",
+        "taşımak",
+        "değiştirmek"
+    ],
+    "buy": [
+        "satın almak",
+        "alma",
+        "iktisap etmek"
+    ],
+    "notify": [
+        "bildirmek",
+        "haberdar etmek",
+        "uyarmak"
+    ],
+    "bring": [
+        "getirmek",
+        "taşımak",
+        "sunmak"
+    ],
+    "erase": [
+        "silmek",
+        "yok etmek",
+        "ortadan kaldırmak"
+    ],
+    "launch": [
+        "başlatmak",
+        "fırlatmak",
+        "yayınlamak"
+    ],
+    "pull": [
+        "çekmek",
+        "çekiştirmek",
+        "almak"
+    ],
+    "begin": [
+        "başlamak",
+        "ilk adımı atmak",
+        "start vermek"
+    ],
+    "alert": [
+        "uyarmak",
+        "ikaz etmek",
+        "haberdar etmek"
+    ],
+    "alarm": [
+        "alarm kurmak",
+        "uyarmak",
+        "ikaz etmek"
+    ],
+    "continue": [
+        "devam etmek",
+        "sürdürmek",
+        "ilerlemek"
+    ],
+    "help": [
+        "yardım etmek",
+        "desteklemek",
+        "el uzatmak"
+    ],
+    "shut": [
+        "kapatmak",
+        "kapamak",
+        "bloke etmek"
+    ],
+    "upload": [
+        "yüklemek",
+        "karşıya yüklemek",
+        "aktarmak"
+    ],
+    "download": [
+        "indirmek",
+        "yüklemek",
+        "almak"
+    ],
+    "wake": [
+        "uyanmak",
+        "uyandırmak",
+        "canlandırmak"
+    ],
+    "text": [
+        "mesaj atmak",
+        "yazı yazmak",
+        "sms göndermek"
+    ],
+    "reset": [
+        "sıfırlamak",
+        "yeniden ayarlamak",
+        "başa almak"
+    ],
+    "dial": [
+        "aramak",
+        "çevirmek",
+        "numara çevirmek"
+    ],
+    "jump": [
+        "atlamak",
+        "zıplamak",
+        "sıçramak"
+    ],
+    "listen": [
+        "dinlemek",
+        "kulak vermek",
+        "algılamak"
+    ],
+    "lower": [
+        "alçaltmak",
+        "düşürmek",
+        "azaltmak"
+    ],
+    "inform": [
+        "bilgilendirmek",
+        "haber vermek",
+        "aydınlatmak"
+    ],
+    "increase": [
+        "artırmak",
+        "yükseltmek",
+        "çoğaltmak"
+    ],
+    "skip": [
+        "atlamak",
+        "geçmek",
+        "önemsememek"
+    ],
+    "define": [
+        "tanımlamak",
+        "açıklamak"
+    ],
+    "mute": [
+        "sessizleştirmek",
+        "susturmak"
+    ],
+    "initiate": [
+        "başlatmak",
+        "inisiyatif almak"
+    ],
+    "correct": [
+        "düzeltmek",
+        "doğrulamak"
+    ],
+    "purchase": [
+        "satın almak",
+        "alım yapmak"
+    ],
+    "adjust": [
+        "ayarlamak",
+        "düzeltmek"
+    ],
+    "be": [
+        "olmak",
+        "var olmak"
+    ],
+    "track": [
+        "takip etmek",
+        "izlemek"
+    ],
+    "respond": [
+        "yanıtlamak",
+        "cevap vermek"
+    ],
+    "describe": [
+        "tanımlamak",
+        "açıklamak"
+    ],
+    "mark": [
+        "işaretlemek",
+        "belirtmek"
+    ],
+    "navigate": [
+        "yönlendirmek",
+        "kılavuzluk etmek"
+    ],
+    "browse": [
+        "göz atmak",
+        "araştırmak"
+    ],
+    "phone": [
+        "telefon etmek",
+        "aramak"
+    ],
+    "answer": [
+        "cevap vermek",
+        "yanıtlamak"
+    ],
+    "share": [
+        "paylaşmak",
+        "ortaklaşa kullanmak"
+    ],
+    "provide": [
+        "sağlamak",
+        "sunmak",
+        "tedarik etmek"
+    ],
+    "activate": [
+        "aktifleştirmek",
+        "etkinleştirmek"
+    ],
+    "see": [
+        "görmek",
+        "izlemek",
+        "anlamak"
+    ],
+    "connect": [
+        "bağlamak",
+        "iletişim kurmak"
+    ],
+    "shuffle": [
+        "karıştırmak",
+        "rastgele sıralamak"
+    ],
+    "view": [
+        "görüntülemek",
+        "incelemek"
+    ],
+    "copy": [
+        "kopyalamak",
+        "çoğaltmak"
+    ],
+    "explain": [
+        "açıklamak",
+        "izah etmek"
+    ],
+    "publish": [
+        "yayınlamak",
+        "basım yapmak"
+    ],
+    "raise": [
+        "yükseltmek",
+        "artırmak"
+    ],
+    "quit": [
+        "çıkmak",
+        "bırakmak"
+    ],
+    "run": [
+        "çalıştırmak",
+        "koşturmak"
+    ],
+    "recommend": [
+        "tavsiye etmek",
+        "önermek"
+    ],
+    "broadcast": [
+        "yayınlamak",
+        "iletmek"
+    ],
+    "prepare": [
+        "hazırlamak",
+        "düzenlemek"
+    ],
+    "try": [
+        "denemek",
+        "çabalamak"
+    ],
+    "decrease": [
+        "azaltmak",
+        "düşürmek"
+    ],
+    "cut": [
+        "kesmek",
+        "biçmek"
+    ],
+    "convert": [
+        "dönüştürmek",
+        "çevirmek"
+    ],
+    "dim": [
+        "karartmak",
+        "sönük yapmak"
+    ],
+    "locate": [
+        "yerini belirlemek",
+        "bulmak"
+    ],
+    "forecast": [
+        "tahmin etmek",
+        "öngörmek"
+    ],
+    "reduce": [
+        "azaltmak",
+        "küçültmek"
+    ],
+    "brighten": [
+        "aydınlatmak",
+        "parlatmak"
+    ],
+    "measure": [
+        "ölçmek",
+        "değerlendirmek"
+    ],
+    "ring": [
+        "çalmak",
+        "zil çalmak"
+    ],
+    "disable": [
+        "devre dışı bırakmak",
+        "etkisizleştirmek"
+    ],
+    "print": [
+        "yazdırmak",
+        "basmak"
+    ],
+    "restart": [
+        "yeniden başlatmak",
+        "tekrar etmek"
+    ],
+    "say": [
+        "söylemek",
+        "belirtmek"
+    ],
+    "confirm": [
+        "onaylamak",
+        "doğrulamak"
+    ],
+    "invite": [
+        "davet etmek",
+        "çağırmak"
+    ],
+    "replay": [
+        "tekrar oynatmak",
+        "yeniden çalmak"
+    ],
+    "speak": [
+        "konuşmak",
+        "söylemek"
+    ],
+    "capture": [
+        "yakalamak",
+        "fotoğraf çekmek"
+    ],
+    "name": [
+        "adlandırmak",
+        "isim vermek"
+    ],
+    "train": [
+        "eğitmek",
+        "öğretmek"
+    ],
+    "grab": [
+        "kapmak",
+        "seçmek"
+    ],
+    "present": [
+        "sunmak",
+        "göstermek"
+    ],
+    "forward": [
+        "iletmek",
+        "göndermek"
+    ],
+    "attach": [
+        "eklemek",
+        "iliştirmek"
+    ],
+    "calculate": [
+        "hesaplamak",
+        "işlem yapmak"
+    ],
+    "clean": [
+        "temizlemek",
+        "silmek"
+    ],
+    "report": [
+        "rapor etmek",
+        "bildirmek"
+    ],
+    "include": [
+        "dahil etmek",
+        "içermek"
+    ],
+    "select": [
+        "seçmek",
+        "tercih etmek"
+    ],
+    "reserve": [
+        "rezervasyon yapmak",
+        "ayırtmak"
+    ],
+    "note": [
+        "not almak",
+        "işaretlemek"
+    ],
+    "seek": [
+        "aramak",
+        "bulmaya çalışmak"
+    ],
+    "exit": [
+        "çıkmak",
+        "ayrılmak"
+    ],
+    "forget": [
+        "unutmak",
+        "silmek"
+    ],
+    "enter": [
+        "girmek",
+        "başlatmak"
+    ],
+    "contact": [
+        "irtibat kurmak",
+        "ulaşmak"
+    ],
+    "hold": [
+        "tutmak",
+        "bekletmek"
+    ],
+    "ignore": [
+        "göz ardı etmek",
+        "umursamamak"
+    ],
+    "exchange": [
+        "takas etmek",
+        "değiştirmek"
+    ],
+    "refresh": [
+        "yenilemek",
+        "güncellemek"
+    ],
+    "dictate": [
+        "dikte etmek",
+        "söylemek"
+    ],
+    "finish": [
+        "bitirmek",
+        "tamamlamak"
+    ],
+    "pick": [
+        "seçmek",
+        "almak"
+    ],
+    "drop": [
+        "bırakmak",
+        "atmak"
+    ],
+    "sort": [
+        "sıralamak",
+        "düzenlemek"
+    ],
+    "enumerate": [
+        "sıralamak",
+        "saymak"
+    ],
+    "transfer": [
+        "aktarmak",
+        "nakletmek"
+    ],
+    "wait": [
+        "beklemek",
+        "gözlemek"
+    ],
+    "leave": [
+        "ayrılmak",
+        "terketmek"
+    ],
+    "close": [
+        "kapatmak",
+        "kapamak"
+    ],
+    "push": [
+        "itmek",
+        "sıkıştırmak"
+    ],
+    "click": [
+        "tıklamak",
+        "çıtlatmak"
+    ],
+    "press": [
+        "basınç uygulamak",
+        "baskı yapmak"
+    ],
+    "generate": [
+        "üretmek",
+        "oluşturmak"
+    ],
+    "review": [
+        "gözden geçirmek",
+        "değerlendirmek"
+    ],
+    "compare": [
+        "karşılaştırmak",
+        "kıyaslamak"
+    ],
+    "count": [
+        "saymak",
+        "hesaplamak"
+    ],
+    "dismiss": [
+        "reddetmek",
+        "işten çıkarmak"
+    ],
+    "rename": [
+        "yeniden adlandırmak",
+        "isim değiştirmek"
+    ],
+    "arrange": [
+        "düzenlemek",
+        "ayarlamak"
+    ],
+    "talk": [
+        "konuşmak",
+        "sohbet etmek"
+    ],
+    "filter": [
+        "filtrelemek",
+        "süzgeçten geçirmek"
+    ],
+    "build": [
+        "inşa etmek",
+        "kurmak"
+    ],
+    "replace": [
+        "yerine koymak",
+        "değiştirmek"
+    ],
+    "load": [
+        "yüklemek",
+        "doldurmak"
+    ],
+    "extend": [
+        "uzatmak",
+        "genişletmek"
+    ],
+    "delay": [
+        "geciktirmek",
+        "ertelemek"
+    ],
+    "coin": [
+        "para basmak",
+        "icat etmek"
+    ],
+    "submit": [
+        "sunmak",
+        "teslim etmek"
+    ],
+    "follow": [
+        "takip etmek",
+        "izlemek"
+    ],
+    "suggest": [
+        "önermek",
+        "tavsiye etmek"
+    ],
+    "subtract": [
+        "çıkarmak",
+        "eksiltmek"
+    ],
+    "register": [
+        "kaydetmek",
+        "tescil etmek"
+    ]
+}
