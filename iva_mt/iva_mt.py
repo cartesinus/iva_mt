@@ -52,7 +52,7 @@ class IVAMT:
     iva_mt.translate("set the temperature on <a>my<a> thermostat")
     iva_mt.generate_alternative_translations("set the temperature on <a>my<a> thermostat")
     """
-    def __init__(self, lang, device="cpu", batch_size=1, model_name="iva_mt", peft_model_id=None):
+    def __init__(self, tgt_lang, src_lang='en', device="cpu", batch_size=1, model_name="iva_mt", peft_model_id=None):
         """
         Initialize the IVAMT class with the specified target language (lang), and optionally load a PEFT-trained model.
 
@@ -82,7 +82,8 @@ class IVAMT:
         if model_name == "iva_mt":
             model_name = f"cartesinus/iva_mt_wslot-m2m100_418M-en-{lang}"
 
-        self.lang = lang
+        self.src_lang = src_lang
+        self.tgt_lang = tgt_lang
         self.verb_ont = []
         self.device = torch.device(device)
 
@@ -92,10 +93,10 @@ class IVAMT:
                 self.inference_model = M2M100ForConditionalGeneration.from_pretrained(
                     peft_config.base_model_name_or_path
                 )
-                self.tokenizer = M2M100Tokenizer.from_pretrained(peft_config.base_model_name_or_path, src_lang="en", tgt_lang=lang)
+                self.tokenizer = M2M100Tokenizer.from_pretrained(peft_config.base_model_name_or_path, src_lang=src_lang, tgt_lang=tgt_lang)
                 self.model = PeftModel.from_pretrained(self.inference_model, peft_model_id)
             else:
-                self.tokenizer = M2M100Tokenizer.from_pretrained(model_name, src_lang="en", tgt_lang=lang)
+                self.tokenizer = M2M100Tokenizer.from_pretrained(model_name, src_lang=src_lang, tgt_lang=tgt_lang)
                 self.model = M2M100ForConditionalGeneration.from_pretrained(model_name)
         except Exception as e:
             raise RuntimeError(f"Failed to load model and tokenizer: {str(e)}")
@@ -115,7 +116,7 @@ class IVAMT:
         """
         input_ids = self.tokenizer(input_text, padding=True, return_tensors="pt")
         input_ids.to(self.device)
-        lang_id = self.tokenizer.get_lang_id(self.lang)
+        lang_id = self.tokenizer.get_lang_id(self.tgt_lang)
         generated_tokens = self.model.generate(**input_ids, forced_bos_token_id=lang_id)
 
         return self.tokenizer.batch_decode(generated_tokens, skip_special_tokens=True)
@@ -174,7 +175,7 @@ class IVAMT:
         if not self.verb_ont:
             self.load_verb_ontology()
 
-        lang_id = self.tokenizer.get_lang_id(self.lang)
+        lang_id = self.tokenizer.get_lang_id(self.src_lang)
 
 		# Get single translation and add it to the alternatives list
         single_trans = self.translate(input_text)
@@ -209,9 +210,9 @@ class IVAMT:
         The loaded ontology will be stored in the 'verb_ont' attribute.
         """
         ont_path = os.path.join(os.path.dirname(__file__),
-                                '../data/verb_translations/en2' + self.lang + '/')
+                                '../data/verb_translations/en2' + self.src_lang + '/')
         ont_files = [f for f in os.listdir(ont_path)
-                     if os.path.isfile(os.path.join(ont_path, f)) and f.startswith('en2' + self.lang)]
+                     if os.path.isfile(os.path.join(ont_path, f)) and f.startswith('en2' + self.src_lang)]
 
         # Sort the list of files in descending order, so the highest version number is the first element
         ont_files.sort(reverse=True)
@@ -286,7 +287,7 @@ class IVAMT:
         outputs = self.model.generate(input_ids,
                                       num_beams=num_variants,
                                       num_return_sequences=num_variants,
-                                      forced_bos_token_id=self.tokenizer.get_lang_id(self.lang))
+                                      forced_bos_token_id=self.tokenizer.get_lang_id(self.src_lang))
         translations = [self.tokenizer.decode(output, skip_special_tokens=True) for output in outputs]
         return translations
 
