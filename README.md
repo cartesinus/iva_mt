@@ -6,7 +6,7 @@ Usage:
 ```python
 from iva_mt.iva_mt import IVAMT
 
-translator = IVAMT("pl")
+translator = IVAMT(src_lang="en", tgt_lang="pl")
 #for single-best translation
 translator.translate("set the temperature on <a>my<a> thermostat")
 #for multi-variant translation
@@ -16,13 +16,13 @@ Available languages (en2xx): [pl](https://huggingface.co/cartesinus/iva_mt_wslot
 
 To use GPU and batching, provide information about device:
 ```python
-IVAMT(tgt_lang="pl", device="cuda:0", batch_size=16)
+IVAMT(src_lang="en", tgt_lang="pl", device="cuda:0", batch_size=16)
 ```
 On V100 this allows to translate ~100 sentences/minute.
 
 To use baseline M2M100:
 ```python
-IVAMT(tgt_lang="pl", model_name="facebook/m2m100_418M")
+IVAMT(src_lang="en", tgt_lang="pl", model_name="facebook/m2m100_418M")
 ```
 
 ## Training M2M100 Model

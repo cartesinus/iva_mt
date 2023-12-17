@@ -80,7 +80,7 @@ class IVAMT:
         iva_mt = IVAMT("pl", device="cuda:0", peft_model_id="stevhliu/roberta-large-lora-token-classification")
         """
         if model_name == "iva_mt":
-            model_name = f"cartesinus/iva_mt_wslot-m2m100_418M-en-{lang}"
+            model_name = f"cartesinus/iva_mt_wslot-m2m100_418M-{src_lang}-{tgt_lang}"
 
         self.src_lang = src_lang
         self.tgt_lang = tgt_lang
