@@ -2,7 +2,17 @@ Multiverb IVA MT
 ================
 Generating diverse verb variants with VerbNet and Conditional Beam Search for enhanced performance of Intelligent Virtual Assistants (IVA) training set translation.
 
-Usage:
+## Installation
+
+You can easily install multiverb_iva_mt from PyPI:
+
+```bash
+pip install multiverb_iva_mt
+```
+
+This command will download and install the latest version of multiverb_iva_mt along with its required dependencies.
+
+## Usage
 ```python
 from iva_mt.iva_mt import IVAMT
 
