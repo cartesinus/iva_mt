@@ -7,7 +7,7 @@ Generating diverse verb variants with VerbNet and Conditional Beam Search for en
 You can easily install multiverb_iva_mt from PyPI:
 
 ```bash
-pip install multiverb_iva_mt
+pip install iva_mt
 ```
 
 This command will download and install the latest version of multiverb_iva_mt along with its required dependencies.
