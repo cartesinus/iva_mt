@@ -1,0 +1,44 @@
+package:
+  name: iva-mt
+  version: 0.1.0
+
+source:
+  url: https://github.com/cartesinus/iva_mt/archive/refs/tags/0.1.0.tar.gz
+  sha256: 66cc8d7eed339afbfc170c24fbbe2b38633812f406365c20093e42fafe1d493d
+
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+
+requirements:
+  host:
+    - python ==3.10
+    - pip
+  run:
+    - python ==3.10
+    - pytorch
+    - transformers
+    - sentencepiece
+    - datasets
+    - huggingface_accelerate
+    - pip
+
+test:
+  imports:
+    - iva_mt
+
+about:
+  home: https://github.com/cartesinus/iva_mt
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: 'A machine translation library utilizing m2m100 models, equipped with features for generating diverse verb variants via VerbNet and Conditional Beam Search to enrich Virtual Assistant training sets.'
+  description: 'A machine translation library utilizing m2m100 models, equipped with features for generating diverse verb variants via VerbNet and Conditional Beam Search to enrich Virtual Assistant training sets.'
+  doc_url: https://github.com/cartesinus/iva_mt
+  dev_url: https://github.com/cartesinus/iva_mt
+
+extra:
+  recipe-maintainers:
+    - cartesinus
+
