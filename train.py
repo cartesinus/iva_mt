@@ -7,6 +7,7 @@ import sacrebleu
 from datasets import load_dataset
 from transformers import M2M100Tokenizer, DataCollatorForSeq2Seq, AutoModelForSeq2SeqLM, Seq2SeqTrainingArguments, Seq2SeqTrainer
 import numpy as np
+from evaluate import load
 
 def postprocess_text(preds, labels):
     """
@@ -81,6 +82,8 @@ if __name__ == '__main__':
     num_train_epochs = config['num_train_epochs']
     model_name = f"{config['model_space']}/{config['model_name']}"
     dataset_name = config['dataset']
+
+    sacrebleu = load("sacrebleu")
 
     dataset = load_dataset(dataset_name, f"{source_lang}-{target_lang}")
     tokenizer = M2M100Tokenizer.from_pretrained(model_name, src_lang=source_lang, tgt_lang=target_lang)

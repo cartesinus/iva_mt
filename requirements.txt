@@ -2,3 +2,4 @@ transformers==4.28.1
 sentencepiece==0.1.99
 datasets
 peft
+evaluate
