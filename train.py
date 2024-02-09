@@ -3,15 +3,14 @@
 
 import json
 import argparse
+import sacrebleu
 from datasets import load_dataset
 from transformers import M2M100Tokenizer, DataCollatorForSeq2Seq, AutoModelForSeq2SeqLM, Seq2SeqTrainingArguments, Seq2SeqTrainer
 import numpy as np
 
-
 def postprocess_text(preds, labels):
-    """Post-processes the text output from the model and the labels.
-
-    Strips the predictions and labels from leading/trailing white spaces.
+    """
+    Post-processes the text output from the model and the labels. Strips the predictions and labels from leading/trailing white spaces.
 
     Args:
         preds (list): List of predicted sequences.
@@ -26,8 +25,7 @@ def postprocess_text(preds, labels):
 
 
 def compute_metrics(eval_preds):
-    """Computes evaluation metrics for the model output.
-
+    """
     Calculates BLEU score and generation length for the model predictions.
 
     Args:
@@ -43,7 +41,6 @@ def compute_metrics(eval_preds):
     labels = np.where(labels != -100, labels, tokenizer.pad_token_id)
     decoded_labels = tokenizer.batch_decode(labels, skip_special_tokens=True)
     decoded_preds, decoded_labels = postprocess_text(decoded_preds, decoded_labels)
-    # Assume sacrebleu is imported and properly initialized
     result = sacrebleu.compute(predictions=decoded_preds, references=decoded_labels)
     result = {"bleu": result["score"]}
     prediction_lens = [np.count_nonzero(pred != tokenizer.pad_token_id) for pred in preds]
@@ -53,9 +50,8 @@ def compute_metrics(eval_preds):
 
 
 def preprocess_data(examples):
-    """Pre-processes input examples for the model.
-
-    Tokenizes the source and target text from the examples.
+    """
+    Pre-processes input examples for the model. Tokenizes the source and target text from the examples.
 
     Args:
         examples (dict): Dictionary containing input examples.
@@ -91,7 +87,6 @@ if __name__ == '__main__':
     tokenized_dataset = dataset.map(preprocess_data, batched=True)
 
     data_collator = DataCollatorForSeq2Seq(tokenizer=tokenizer, model=model_name)
-    # Assume sacrebleu is imported and properly initialized
     model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
 
     training_args = Seq2SeqTrainingArguments(
@@ -119,4 +114,3 @@ if __name__ == '__main__':
     )
 
     trainer.train()
-
