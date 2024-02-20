@@ -4,14 +4,18 @@
 import json
 import argparse
 import sacrebleu
-from datasets import load_dataset
-from transformers import M2M100Tokenizer, DataCollatorForSeq2Seq, AutoModelForSeq2SeqLM, Seq2SeqTrainingArguments, Seq2SeqTrainer
 import numpy as np
 from evaluate import load
+from datasets import load_dataset
+from transformers import (
+    M2M100Tokenizer, DataCollatorForSeq2Seq, AutoModelForSeq2SeqLM, Seq2SeqTrainingArguments,
+    Seq2SeqTrainer
+)
 
 def postprocess_text(preds, labels):
     """
-    Post-processes the text output from the model and the labels. Strips the predictions and labels from leading/trailing white spaces.
+    Post-processes the text output from the model and the labels. Strips the predictions and labels
+    from leading/trailing white spaces.
 
     Args:
         preds (list): List of predicted sequences.
@@ -52,7 +56,8 @@ def compute_metrics(eval_preds):
 
 def preprocess_data(examples):
     """
-    Pre-processes input examples for the model. Tokenizes the source and target text from the examples.
+    Pre-processes input examples for the model. Tokenizes the source and target text from the
+    examples.
 
     Args:
         examples (dict): Dictionary containing input examples.
@@ -62,13 +67,17 @@ def preprocess_data(examples):
     """
     src_text = [example[source_lang] for example in examples["translation_xml"]]
     tgt_text = [example[target_lang] for example in examples["translation_xml"]]
-    model_inputs = tokenizer(src_text, text_target=tgt_text, return_tensors="pt", padding="max_length", truncation=True)
+    model_inputs = tokenizer(
+        src_text, text_target=tgt_text, return_tensors="pt", padding="max_length", truncation=True
+    )
     return model_inputs
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Train M2M100 model.')
-    parser.add_argument('--config', type=str, default="config.json", help='Path to configuration JSON file.')
+    parser.add_argument('--config', type=str, default="config.json",
+        help='Path to configuration JSON file.'
+    )
     args = parser.parse_args()
 
     # Read configuration from JSON file
@@ -86,7 +95,9 @@ if __name__ == '__main__':
     sacrebleu = load("sacrebleu")
 
     dataset = load_dataset(dataset_name, f"{source_lang}-{target_lang}")
-    tokenizer = M2M100Tokenizer.from_pretrained(model_name, src_lang=source_lang, tgt_lang=target_lang)
+    tokenizer = M2M100Tokenizer.from_pretrained(
+        model_name, src_lang=source_lang, tgt_lang=target_lang
+    )
     tokenized_dataset = dataset.map(preprocess_data, batched=True)
 
     data_collator = DataCollatorForSeq2Seq(tokenizer=tokenizer, model=model_name)

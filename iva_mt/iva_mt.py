@@ -2,14 +2,15 @@
 # -*- coding: utf-8 -*-
 """
 This script provides a class for translating and generating multiple variants of input text using
-the M2M100 model from Hugging Face's Transformers library. It can be used for generating translations
-with different verb alternatives and validating translations with proper tag handling.
+the M2M100 model from Hugging Face's Transformers library. It can be used for generating
+translations with different verb alternatives and validating translations with proper tag handling.
 """
 
-import json
-import re
-import string
 import os
+import re
+import json
+import string
+import tarfile
 from typing import List
 from os import listdir
 from os.path import isfile, join
@@ -52,18 +53,23 @@ class IVAMT:
     iva_mt.translate("set the temperature on <a>my<a> thermostat")
     iva_mt.generate_alternative_translations("set the temperature on <a>my<a> thermostat")
     """
-    def __init__(self, tgt_lang, src_lang='en', device="cpu", batch_size=1, model_name="iva_mt", peft_model_id=None):
+    def __init__(
+            self, tgt_lang, src_lang='en', device="cpu", batch_size=1, model_name="iva_mt",
+            peft_model_id=None
+        ):
         """
-        Initialize the IVAMT class with the specified target language (lang), and optionally load a PEFT-trained model.
+        Initialize the IVAMT class with the specified target language (lang), and optionally load a
+        PEFT-trained model.
 
         Args:
         lang (str): Target language code (e.g. "pl" for Polish).
         device (str, optional): Device used for inference, e.g., "cuda:0". Defaults to "cpu".
         batch_size (int, optional): Batch size used for inference. Defaults to 1.
-        model_name (str, optional): HF model name (e.g., "facebook/m2m100_418M"). By default, set to custom models ("iva_mt").
-        peft_model_id (str, optional): Identifier of the PEFT-trained model on the Hugging Face Model Hub or the path
-                                        to a local directory containing the PEFT-trained model files. Defaults to None.
-                                        If provided, a PEFT-trained model is loaded for inference.
+        model_name (str, optional): HF model name (e.g., "facebook/m2m100_418M"). By default, set to
+            custom models ("iva_mt").
+        peft_model_id (str, optional): Identifier of the PEFT-trained model on the Hugging Face
+            Model Hub or the path to a local directory containing the PEFT-trained model files.
+            Defaults to None. If provided, a PEFT-trained model is loaded for inference.
 
         Raises:
         RuntimeError: If model and tokenizer loading fails.
@@ -73,14 +79,21 @@ class IVAMT:
         device (torch.device): Device used for inference.
         batch_size (int): Batch size used for inference.
         tokenizer (transformers.M2M100Tokenizer): Tokenizer for the M2M100 model.
-        model (transformers.M2M100ForConditionalGeneration or PeftModel): M2M100 model for translation.
-                                                                          If peft_model_id is provided, a PEFT-trained model is used.
+        model (transformers.M2M100ForConditionalGeneration or PeftModel): M2M100 model for
+            translation. If peft_model_id is provided, a PEFT-trained model is used.
 
         Example:
-        iva_mt = IVAMT("pl", device="cuda:0", peft_model_id="stevhliu/roberta-large-lora-token-classification")
+        iva_mt = IVAMT(
+            "pl", device="cuda:0", peft_model_id="stevhliu/roberta-large-lora-token-classification"
+        )
         """
+        tokenizer_model = model_name
         if model_name == "iva_mt":
             model_name = f"cartesinus/iva_mt_wslot-m2m100_418M-{src_lang}-{tgt_lang}"
+            tokenizer_model = model_name
+        elif model_name.endswith('.tgz'):
+            tokenizer_model = f"cartesinus/iva_mt_wslot-m2m100_418M-{src_lang}-{tgt_lang}"
+            model_name = self._unpack_model_if_archive(model_name)
 
         self.src_lang = src_lang
         self.tgt_lang = tgt_lang
@@ -93,10 +106,16 @@ class IVAMT:
                 self.inference_model = M2M100ForConditionalGeneration.from_pretrained(
                     peft_config.base_model_name_or_path
                 )
-                self.tokenizer = M2M100Tokenizer.from_pretrained(peft_config.base_model_name_or_path, src_lang=src_lang, tgt_lang=tgt_lang)
+                self.tokenizer = M2M100Tokenizer.from_pretrained(
+                    peft_config.base_model_name_or_path, src_lang=src_lang, tgt_lang=tgt_lang
+                )
                 self.model = PeftModel.from_pretrained(self.inference_model, peft_model_id)
             else:
-                self.tokenizer = M2M100Tokenizer.from_pretrained(model_name, src_lang=src_lang, tgt_lang=tgt_lang)
+                print(f"Loading tokenizer: {tokenizer_model}")
+                self.tokenizer = M2M100Tokenizer.from_pretrained(
+                    tokenizer_model, src_lang=src_lang, tgt_lang=tgt_lang
+                )
+                print(f"Loading model: {model_name}")
                 self.model = M2M100ForConditionalGeneration.from_pretrained(model_name)
         except Exception as e:
             raise RuntimeError(f"Failed to load model and tokenizer: {str(e)}")
@@ -106,7 +125,8 @@ class IVAMT:
 
     def translate(self, input_text):
         """
-        Generate a single translation for a given input text. Input text can be string or list of strings.
+        Generate a single translation for a given input text. Input text can be string or list of
+        strings.
 
         Args:
         input_text (str or list(str)): Source text/s to translate.
@@ -131,7 +151,8 @@ class IVAMT:
         list: A list containing a single translated string for each element of input_text.
         """
         output = []
-        for input_text in [input_texts[x:x + self.batch_size] for x in range(0, len(input_texts), self.batch_size)]:
+        for input_text in [input_texts[x:x + self.batch_size] for x in \
+                range(0, len(input_texts), self.batch_size)]:
             output.extend(self.translate(input_text))
         return output
 
@@ -212,9 +233,10 @@ class IVAMT:
         ont_path = os.path.join(os.path.dirname(__file__),
                                 '../data/verb_translations/en2' + self.src_lang + '/')
         ont_files = [f for f in os.listdir(ont_path)
-                     if os.path.isfile(os.path.join(ont_path, f)) and f.startswith('en2' + self.src_lang)]
+                     if os.path.isfile(os.path.join(ont_path, f))
+                     and f.startswith('en2' + self.src_lang)]
 
-        # Sort the list of files in descending order, so the highest version number is the first element
+        # Sort the list of files in descending order, so the highest version number is first element
         ont_files.sort(reverse=True)
 
         with open(os.path.join(ont_path, ont_files[0]), "r") as f:
@@ -231,8 +253,8 @@ class IVAMT:
         verb (str): The verb in the source language (English) for which to find translations.
 
         Returns:
-        list: A list of verb translations in the target language if the verb is found in the verb ontology;
-              an empty list otherwise.
+        list: A list of verb translations in the target language if the verb is found in the verb
+            ontology; an empty list otherwise.
 
         Note:
         The method will load the verb ontology if it has not been loaded already.
@@ -247,9 +269,9 @@ class IVAMT:
 
     def get_verb_alternatives(self, sentence):
         """
-        Retrieve verb alternatives for the verbs found in the input sentence using the verb ontology.
-        The verb alternatives are returned as forced word IDs that can be used as constraints during
-        translation.
+        Retrieve verb alternatives for the verbs found in the input sentence using the verb
+        ontology. The verb alternatives are returned as forced word IDs that can be used as
+        constraints during translation.
 
         Args:
         sentence (str): The input sentence for which to find verb alternatives.
@@ -288,6 +310,41 @@ class IVAMT:
                                       num_beams=num_variants,
                                       num_return_sequences=num_variants,
                                       forced_bos_token_id=self.tokenizer.get_lang_id(self.src_lang))
-        translations = [self.tokenizer.decode(output, skip_special_tokens=True) for output in outputs]
+        translations = [
+            self.tokenizer.decode(output, skip_special_tokens=True)
+            for output in outputs
+        ]
         return translations
 
+    def _unpack_model_if_archive(self, model_path: str) -> str:
+        """
+        Checks if the model_path is a .tgz archive, and if so, unpacks it.
+
+        Args:
+            model_path (str): Path to the model archive or directory.
+
+        Returns:
+            str: Path to the unpacked model directory.
+        """
+        necessary_files = ['config.json', 'pytorch_model.bin']
+        filename = os.path.basename(model_path)
+        model_name = filename.split('-')[:-1]
+        model_name = '-'.join(model_name)
+
+        cache_path = os.path.expanduser("~/.cache/huggingface/hub/models--tcl--" + model_name)
+        if os.path.exists(cache_path) and all(
+                os.path.isfile(os.path.join(cache_path, f)) for f in necessary_files):
+            print(f"Extraction path '{cache_path}' already exists. Skipping extraction.")
+            return cache_path
+
+        os.makedirs(cache_path, exist_ok=True)
+        print(f"Extracting local model to {cache_path}")
+        with tarfile.open(model_path, "r:gz") as tar:
+            for member in tar.getmembers():
+                if member.isfile():
+                    print(f"Extracting {member.name} to {cache_path}")
+                    # Extract member to extraction_path directly, ignoring its original path
+                    member.name = os.path.basename(member.name)
+                    tar.extract(member, path=cache_path)
+
+        return cache_path

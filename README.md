@@ -35,6 +35,14 @@ To use baseline M2M100:
 IVAMT(src_lang="en", tgt_lang="pl", model_name="facebook/m2m100_418M")
 ```
 
+To load a local model from an archive:
+```python
+# If the model archive is located at /path/to/your/model.tgz, it will be automatically extracted
+# to the ~/.cache/huggingface/hub directory. Specify this path using the `model_name` parameter.
+IVAMT(src_lang="en", tgt_lang="pl", model_name="/path/to/your/model.tgz")
+```
+Note: When loading a local model, the tokenizer used will still be `cartesinus/iva_mt_wslot-m2m100_418M-{src_lang}-{tgt_lang}` to ensure compatibility and optimal performance.
+
 ## Training M2M100 Model
 
 In this repository, we provide a script `train.py` to facilitate the training of M2M100 models on your specified translation tasks. To run the training script, it is recommended to have a GPU for computational acceleration. When training on Google Colab, it's advisable to use an A100 GPU as V100 might not have sufficient memory.
